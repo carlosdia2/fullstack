@@ -1,23 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tu Carrera Digital</title>
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <section class="seccionPrueba">
+        <h3>Ejercicio selectores h3</h3>
+        <h5>Ejercicio selectores h5</h5>
+        <p>Ejercicio selectores p</p>
+    </section>
+
+    <section class="ejerciciosSelectores">
+        <h3 class="claseh3">ejercicio1 (h3) </h3>
+        <h3 id="idh3">ejercicio2 (h3) </h3>
+        <h6>ejercicio3 (h6) </h6>
+        <p>ejercicio 5 (parrafo) </p>
+        <img src="img/Curso-marketing-digital-centro.png" alt="alternativo"></img>
+        <a href="#">enlace1</a>
+        <a href="#">enlace2</a>
+        <a href="#">enlace3</a>
+    </section>
     <!-- <h1> Hola mundo! </h1>
     <h2> Hola mundo! </h2> -->
 
     <!-- deberia estar todo en minuscula porque el SEO Penaliza pero lo dejo asi por flojera -->
+
+
+    <header>
+        <a href="#">Login Alumnos</a>
+        <a href="#">Login Empresas</a>
+        <a href="#"><img src="img/Tu-carrera-digital-general.png"></a>
+        <a href="#">Cursos</a>
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">Infórmate</a>
+    </header>
+
+
+
     <main>
         <h1>
             Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
         </h1>
-
+        <img src="img/ico-centro.png" alt="hola">
         <a href="#">Ver Cursos</a>
+        <img src="img/CTA-informate.png" alt="hola">
 
     </main>
 
@@ -46,6 +79,9 @@
 
     </section>
 
+    <section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SzZlMSDKE8o?si=bmFpPLHflYaRXWve" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
 
     <section>
 
@@ -94,32 +130,59 @@
 
         <h2>¿TIENES DUDAS? HABLA CON NOSOTROS:</h2> 
 
-        <h4>llámanos 
+    </section>
+
+    <section>
+
             <img src="img/ico-TLF.png">
+
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+                <path d="M15 7a2 2 0 0 1 2 2"></path>
+                <path d="M15 3a6 6 0 0 1 6 6"></path>
+             </svg> -->
+
+            <p>Llámanos</p>
             <a href="#">638024408</a> 
-        </h4>
-
-        <h4>Escribenos
+     
             <img src="img/ico-EMAIL.png">
+            <p>Escribenos</p>
             <a href="#">patric.departearroyo@adecco.com</a>
-        </h4>
-
-       
-
 
 
     </section>
+    
+    <footer>
+        <a href="#">CURSOS ZONA-CENTRO</a>
+        <a href="#">SOBRE NOSOTROS</a>
+        <a href="#">Preguntas Frecuentes (FAQ)</a>
+        <a href="#">Política de Cookies</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Aviso Legal</a>
+    </footer>
 
+    <form>
+        <fieldset>
+            <legend>Titulo del formulario</legend>
+            
+            <label>Nombre y apellidos * </label>
+            <input type="text" placeholder="Escribe aqui tu nombre" required>
+
+            <label>Teléfono</label>
+            <input type="tel" placeholder="llama ya"> 
+
+            <label>Email</label>
+            <input type="email" placeholder="dinos tu email">
+
+            <input type="submit" value="enviar ya de ya">
+          
+
+        </fieldset>
+    </form>
  
 </body>
 
-<footer>
-    <a href="#">CURSOS ZONA-CENTRO</a>
-    <a href="#">SOBRE NOSOTROS</a>
-    <a href="#">Preguntas Frecuentes (FAQ)</a>
-    <a href="#">Política de Cookies</a>
-    <a href="#">Política de Privacidad</a>
-    <a href="#">Aviso Legal</a>
-</footer>
+
 
 </html>

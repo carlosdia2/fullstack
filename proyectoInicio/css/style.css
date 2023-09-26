@@ -1,32 +1,38 @@
-html
-    {
-        font-size:62.5%;
-    }
-
-body{
-    font-size:16px;
-    background-color: aliceblue;
-    }
-
-    /* esto me permite conseguir 10 px = 1rem; sin eso 16px=1rem*/
-
-h1 {
-    color:pink;
-    background-color:yellow;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 30px;
-    padding-bottom: 100px;
-    margin-top: 200px;
-    margin-bottom:200px;
-    border: 30px solid black;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 7em;
-    max-width: 60%;
+:root {
+    --colorPrincipal: #F76666;
+    --colorSecundario: #02052F;
+    --fuentePrincipal: 'Open Sans', sans-serif;
+    --fuenteSecundaria: "DinBold", sans-serif;
 }
 
 
-.seccionPrueba h5{
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--fuentePrincipal);
+}
+
+/* esto me permite conseguir 10 px = 1rem; sin eso 16px=1rem*/
+
+h1 {
+    color: white;
+    background-color: var(--colorPrincipal);
+    padding-top: 30px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 20px;
+    /* border: 30px solid black; */
+    font-size: 7rem;
+    max-width: 70%;
+}
+
+
+/* .seccionPrueba h5{
     color:white;
     background-color: blue;
 }
@@ -42,63 +48,61 @@ h1 {
 
 }
 /* selector de clase */
-.claseh3{ 
-    color:red;
+/* .claseh3 {
+    color: red;
     text-transform: uppercase;
     font-size: 3rem;
-    text-align: center ;
+    text-align: center;
 }
 
 
 /* selector de id  */
-#idh3{
-    color:red;
+/* #idh3 {
+    color: red;
     text-transform: uppercase;
     font-size: 3rem;
-    text-align: center ;
-}
+    text-align: center;
+} */ 
 
 
 /* selector de elemento */
-h6{
-    color:red;
+h6 {
+    color: red;
     text-transform: uppercase;
     font-size: 3rem;
-    text-align: center ;
+    text-align: center;
 
 }
+
 /* 
 selector de cadena descendiente */
 
-.ejerciciosSelectores p{
-    color:red;
+.ejerciciosSelectores p {
+    color: red;
     text-transform: uppercase;
     font-size: 3rem;
-    text-align: center ;
+    text-align: center;
 }
 
 /* selector de atributo */
-[src="img/Curso-marketing-digital-centro.png"]{
-   background-color: yellow;
+[src="img/Curso-marketing-digital-centro.png"] {
+    background-color: yellow;
 }
 
 /* selector multiple */
-#idh3, [src="img/Curso-marketing-digital-centro.png"]{
-   background-color: blueviolet;
+#idh3,
+[src="img/Curso-marketing-digital-centro.png"] {
+    background-color: blueviolet;
 }
 
-.ejerciciosSelectores > a{
-    color:red;
+/* selector de todos los hijos  */
+.ejerciciosSelectores>a {
+    color: red;
     text-transform: uppercase;
     font-size: 3rem;
-    text-align: center ;
+    text-align: center;
 }
 
-h1{
-    background: rgba(248, 102, 102, 0.65);
-    margin-bottom: 10px;
-    display: block;
-    font-weight: 800;
-    padding: 35px;
-    color: #fff;
+.ejerciciocolor {
+    color: var(--colorPrincipal);
 }

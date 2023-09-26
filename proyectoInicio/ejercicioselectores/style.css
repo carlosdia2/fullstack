@@ -1,0 +1,69 @@
+
+
+
+
+/* SELECTOR DE ELEMENTO */
+
+h1 {
+    color:green;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:4rem;
+}
+
+/* SELECTOR DE CLASE */
+
+.clase{
+    color:red;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5rem;
+}
+
+/* SELECTOR DE ID */
+
+#parrafo{
+    color:blue;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+
+/* SELECTOR DE ATRIBUTO */
+[src="../img/Logo-Adecco.png"]{
+    margin:50px;
+}
+
+/* SELECTOR DE CADENA DESCENDIENTE */
+
+.seccion5 h4{
+    color:pink;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+/* SELECTOR DE TODOS HIJOS */
+
+.seccion6 > h5{
+    color:yellow;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+    
+}
+
+.seccion7 h3, .seccion7 h6{
+    color:purple;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+
+
+/* SELECTOR MULTIPLE */

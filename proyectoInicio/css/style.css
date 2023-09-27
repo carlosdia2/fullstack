@@ -2,7 +2,7 @@
     --colorPrincipal: #F76666;
     --colorSecundario: #02052F;
     --fuentePrincipal: 'Open Sans', sans-serif;
-    --fuenteSecundaria: "DinBold", sans-serif;
+    --fuenteBotones: "DinBold", sans-serif;
 }
 
 
@@ -17,19 +17,7 @@ body {
 
 /* esto me permite conseguir 10 px = 1rem; sin eso 16px=1rem*/
 
-h1 {
-    color: white;
-    background-color: var(--colorPrincipal);
-    padding-top: 30px;
-    padding-bottom: 100px;
-    padding-left: 20px;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    margin-left: 20px;
-    /* border: 30px solid black; */
-    font-size: 7rem;
-    max-width: 70%;
-}
+
 
 
 /* .seccionPrueba h5{
@@ -77,12 +65,12 @@ h6 {
 /* 
 selector de cadena descendiente */
 
-.ejerciciosSelectores p {
+/* .ejerciciosSelectores p {
     color: red;
     text-transform: uppercase;
     font-size: 3rem;
     text-align: center;
-}
+} */
 
 /* selector de atributo */
 [src="img/Curso-marketing-digital-centro.png"] {
@@ -103,6 +91,141 @@ selector de cadena descendiente */
     text-align: center;
 }
 
-.ejerciciocolor {
-    color: var(--colorPrincipal);
+/* ESTILOS GENERICOS */
+
+.contenedor{
+    max-width: 88%;
+    margin: 0 auto; /*margen de arriba 0 y derecha automatico */
 }
+
+/* .ejerciciocolor {
+    color: var(--colorPrincipal);
+} */
+
+/* ESTILOS PARA EL MAIN  */
+
+.fondoMain{
+    background-image: url(../img/11641893944_banner_zona_centro.png);
+    background-size: cover;
+    background-position: top left;
+    padding: 80px 0 180px 0;
+}
+
+.margenDerecho{
+    margin-right:30%;
+}
+
+
+h1{
+    background-color: var(--colorPrincipal);
+    font-weight:800;
+    font-family: var(--fuentePrincipal);
+    font-size: 4.5rem;
+    padding:35px;
+    margin-bottom: 10px;
+    color:white;
+    opacity:70%;
+}
+
+.fondoMain a{
+    background-color: black;
+    color:white;
+    border: 2px solid black;
+    padding: 24px 94px;
+    font-size: 1.4rem;
+    font-family: var(--fuenteBotones);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.flexMain{
+    display: flex; /*por defecto es row */
+    justify-content:space-between;
+}
+
+.contenedorLogos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    margin-top: -120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 12px;
+}
+
+.cursos h3{
+    color:var(--colorPrincipal);
+    font-weight: 800;
+    text-align: center;
+    font-family:var(--fuentePrincipal);
+
+}
+
+.cursos > h2{
+    color:black;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.cursos{
+    text-align: center;
+    
+}
+
+.marketing{
+    display:flex;
+
+}
+
+
+
+
+  
+
+
+
+
+
+/* ESTILOS PARA LA IMAGEN DE CORPORACIONES */
+
+/* ESTILOS SECCION CURSOS */
+
+/* ESTILOS SECCION PIDENOSLO */
+
+/* ESTILOS SECCION VIDEO  */
+
+/* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS  */
+
+
+/* ESTILOS LOCALIZACIONES  */
+
+.localizaciones{
+    background-color: black;
+    color:white;
+}
+
+/* ESTILOS CONTACTAR */
+
+/* ESTILOS FOOTER */
+
+/* ESTILOS HEADER */
+
+/* DIVS ejemplos */
+
+
+/* .fondoAmarillo{
+    height: 300px;
+    background-color: yellow;
+}
+
+.fondoAzul{
+    height:100px;
+    background-color: blue;
+    margin:0;
+} */
+
+

@@ -7,7 +7,7 @@
     <title>Tu Carrera Digital</title>
 
     <!-- normalizar la web independientemente del navegador -->
-    
+
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -43,6 +43,8 @@
     <!-- deberia estar todo en minuscula porque el SEO Penaliza pero lo dejo asi por flojera -->
 
 
+
+
     <header>
         <a href="#">Login Alumnos</a>
         <a href="#">Login Empresas</a>
@@ -54,31 +56,61 @@
 
 
 
-    <main>
-        <h1>
-            Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
-        </h1>
-        <img src="img/ico-centro.png" alt="hola">
-        <a href="#">Ver Cursos</a>
-        <img src="img/CTA-informate.png" alt="hola">
+    <main class="fondoMain">
+        <div class="contenedor">
+            <div class="margenDerecho">
+                <h1>
+                    Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
+                </h1>
+                <div class="flexMain">
+                    <img src="img/ico-centro.png" alt="icono centro">
+                <a href="#">Ver Cursos</a>
+                </div>
+            </div>
+        </div>
 
+       
+
+        <img src="img/CTA-informate.png">
     </main>
 
-    <section>
-        <img src="img/Logos-oficiales.png" alt="#">
+    <section class="contenedorLogos contenedor">
+  
+        <img src="img/Logos-oficiales.png">
+        <img src="img/Logo-Adecco.png">
+  
     </section>
 
 
-    <section>
+    <section class="seccionCursos contenedor">
         <h3>Cursos</h3>
 
         <h2>CAMBIA TU FUTURO</h2>
 
-        <h2 class="ejerciciocolor">MARKETING DIGITAL</h2>
+        
+    <div class="marketing">
 
-        <h2 class="ejerciciocolor">PROGRAMACIÓN DE VIDEOJUEGOS, DISEÑO 3D Y REALIDAD VIRTUAL</h2>
+        <h2>MARKETING DIGITAL</h2>
 
-        <h2 class="ejerciciocolor"  >PROGRAMACIÓN WEB FULL STACK</h2>
+        <img src="img/Curso-marketing-digital-centro.png">
+
+    </div>
+
+    <div class="videojuegos">
+
+        <h2 >PROGRAMACIÓN DE VIDEOJUEGOS, DISEÑO 3D Y REALIDAD VIRTUAL</h2>
+
+        <img src="img/Curso-programacion-videojuegos-centro.png">
+
+    </div>
+
+    <div class="fullstack">
+        
+        <h2 >PROGRAMACIÓN WEB FULL STACK</h2>
+
+        <img src="img/Curso-programacion-web-full-stack-centro.png">
+
+    </div>
 
     </section>
 
@@ -90,7 +122,10 @@
     </section>
 
     <section>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SzZlMSDKE8o?si=bmFpPLHflYaRXWve" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SzZlMSDKE8o?si=bmFpPLHflYaRXWve"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
     </section>
 
     <section>
@@ -120,17 +155,34 @@
 
     </section>
 
-    <section>
+    <section class="localizaciones">
 
-        <h2>LOCALIZACIONES:</h2>
+        <div class="contenedor">
 
-        <h3>Madrid</h3>
+            <h2>LOCALIZACIONES:</h2>
 
-        <p>CALLE DEL MARQUÉS DE AHUMADA 7 PLANTA BAJA AULA 15 28028, MADRID, MADRID. </p>
+            <h3>Madrid</h3>
 
-        <h3>Madrid</h3>
+            <p>CALLE DEL MARQUÉS DE AHUMADA 7 PLANTA BAJA AULA 15 28028, MADRID, MADRID. </p>
 
-        <p>CALLE HOSPITAL 2 28012, MADRID, MADRID.</p>
+            <h3>Madrid</h3>
+
+            <p>CALLE HOSPITAL 2 28012, MADRID, MADRID.</p>
+
+        </div>
+
+
+        <section class="fondoAmarillo">
+            <div>
+            </div>
+        </section>
+
+        <section class="fondoAzul">
+            <div class="contenedor">
+            </div>
+        </section>
+
+
 
     </section> <!--otra seccion-->
 
@@ -138,31 +190,31 @@
 
         <h3>CONTACTAR</h3>
 
-        <h2>¿TIENES DUDAS? HABLA CON NOSOTROS:</h2> 
+        <h2>¿TIENES DUDAS? HABLA CON NOSOTROS:</h2>
 
     </section>
 
     <section>
 
-            <img src="img/ico-TLF.png">
+        <img src="img/ico-TLF.png">
 
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
                 <path d="M15 7a2 2 0 0 1 2 2"></path>
                 <path d="M15 3a6 6 0 0 1 6 6"></path>
              </svg> -->
 
-            <p>Llámanos</p>
-            <a href="#">638024408</a> 
-     
-            <img src="img/ico-EMAIL.png">
-            <p>Escribenos</p>
-            <a href="#">patric.departearroyo@adecco.com</a>
+        <p>Llámanos</p>
+        <a href="#">638024408</a>
+
+        <img src="img/ico-EMAIL.png">
+        <p>Escribenos</p>
+        <a href="#">patric.departearroyo@adecco.com</a>
 
 
     </section>
-    
+
     <footer>
         <a href="#">CURSOS ZONA-CENTRO</a>
         <a href="#">SOBRE NOSOTROS</a>
@@ -175,22 +227,26 @@
     <form>
         <fieldset>
             <legend>Titulo del formulario</legend>
-            
+
             <label>Nombre y apellidos * </label>
             <input type="text" placeholder="Escribe aqui tu nombre" required>
 
             <label>Teléfono</label>
-            <input type="tel" placeholder="llama ya"> 
+            <input type="tel" placeholder="llama ya">
 
             <label>Email</label>
             <input type="email" placeholder="dinos tu email">
 
             <input type="submit" value="enviar ya de ya">
-          
+
 
         </fieldset>
     </form>
- 
+
+
+
+
+
 </body>
 
 

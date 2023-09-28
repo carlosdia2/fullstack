@@ -50,7 +50,7 @@ body {
     text-transform: uppercase;
     font-size: 3rem;
     text-align: center;
-} */ 
+} */
 
 
 /* selector de elemento */
@@ -93,9 +93,10 @@ selector de cadena descendiente */
 
 /* ESTILOS GENERICOS */
 
-.contenedor{
+.contenedor {
     max-width: 88%;
-    margin: 0 auto; /*margen de arriba 0 y derecha automatico */
+    margin: 0 auto;
+    /*margen de arriba 0 y derecha automatico */
 }
 
 /* .ejerciciocolor {
@@ -104,32 +105,32 @@ selector de cadena descendiente */
 
 /* ESTILOS PARA EL MAIN  */
 
-.fondoMain{
+.fondoMain {
     background-image: url(../img/11641893944_banner_zona_centro.png);
     background-size: cover;
     background-position: top left;
     padding: 80px 0 180px 0;
 }
 
-.margenDerecho{
-    margin-right:30%;
+.margenDerecho {
+    margin-right: 40%;
 }
 
 
-h1{
+h1 {
     background-color: var(--colorPrincipal);
-    font-weight:800;
+    font-weight: 800;
     font-family: var(--fuentePrincipal);
     font-size: 4.5rem;
-    padding:35px;
+    padding: 35px;
     margin-bottom: 10px;
-    color:white;
-    opacity:70%;
+    color: white;
+    opacity: 70%;
 }
 
-.fondoMain a{
+.fondoMain a {
     background-color: black;
-    color:white;
+    color: white;
     border: 2px solid black;
     padding: 24px 94px;
     font-size: 1.4rem;
@@ -140,12 +141,20 @@ h1{
 
 }
 
-.flexMain{
-    display: flex; /*por defecto es row */
-    justify-content:space-between;
+.fondoMain a:hover{
+    background-color: white;
+    border-color: var(--colorPrincipal);
+    color:var(--colorPrincipal);
+
 }
 
-.contenedorLogos{
+.flexMain {
+    display: flex;
+    /*por defecto es row */
+    justify-content: space-between;
+}
+
+.contenedorLogos {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -157,44 +166,177 @@ h1{
     border-radius: 12px;
 }
 
-.cursos h3{
-    color:var(--colorPrincipal);
-    font-weight: 800;
-    text-align: center;
-    font-family:var(--fuentePrincipal);
-
-}
-
-.cursos > h2{
-    color:black;
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-
-.cursos{
-    text-align: center;
-    
-}
-
-.marketing{
-    display:flex;
-
-}
-
-
-
-
-  
-
-
-
-
-
 /* ESTILOS PARA LA IMAGEN DE CORPORACIONES */
 
 /* ESTILOS SECCION CURSOS */
 
+.seccionCursos h3 {
+    color: var(--colorPrincipal);
+    font-weight: 800;
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+
+}
+
+.seccionCursos>h2 {
+    color:var(--colorSecundario);
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin:40px 0px;
+
+}
+
+.botonesCursos{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 105px;
+}
+
+.botonVerTodo{
+    background-color: var(--colorPrincipal);
+    color:white;
+    font-family: var(--fuentePrincipal);
+    padding: 10px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-right:0.5rem;
+    margin-left:0.5rem;
+    border: 1px solid var(--colorPrincipal);
+}
+
+.botonMadrid{
+    background-color:white;
+    color:black;
+    font-family: var(--fuentePrincipal);
+    padding: 10px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-color: var(--colorPrincipal);
+    font-size: 1.4rem;
+    margin-right:0.5rem;
+    margin-left:0.5rem;
+    border: 1px solid var(--colorPrincipal)
+}
+
+.seccionCursos{
+    display:block;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.cursos{
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.cursos>div{
+    flex:50%;
+    max-width: 50%;
+    flex: 2;
+    padding:40px 60px;
+
+}
+
+.marketing{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    background-image: url(../img/Curso-marketing-digital-centro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.videojuegos{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    background-image: url(../img/Curso-programacion-videojuegos-centro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.cursos div h2{
+    font-size: 27px;
+    margin-bottom: 22px;
+    color:white;
+    font-weight: 700;
+}
+
+.cursos div a{
+    
+    background-color: white;
+    color:var(--colorPrincipal);
+    font-family: var(--fuentePrincipal);
+    padding: 20px 44px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-right:0.5rem;
+    margin-left:0.5rem;
+    border: 1px solid var(--colorPrincipal);
+}
+
+
 /* ESTILOS SECCION PIDENOSLO */
+
+.seccionPidenoslo{
+    margin-bottom: 150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccionPidenoslo h3{
+   text-align: center;
+   text-transform: uppercase;
+   color:var(--colorSecundario);
+   font-weight: 800;
+   margin-bottom: 40px 0;
+   font-size: 17px;
+}
+
+.seccionPidenoslo div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.seccionPidenoslo a{
+    color: white;
+    background-color: var(--colorPrincipal);
+    padding: 15px 34px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 96px;
+    font-size: 16px;
+
+}
+
+.seccionPidenoslo a:hover{
+
+    background-color: var(--colorSecundario);
+    text-decoration: underline;
+
+}
+
 
 /* ESTILOS SECCION VIDEO  */
 
@@ -203,9 +345,9 @@ h1{
 
 /* ESTILOS LOCALIZACIONES  */
 
-.localizaciones{
+.localizaciones {
     background-color: black;
-    color:white;
+    color: white;
 }
 
 /* ESTILOS CONTACTAR */
@@ -227,5 +369,3 @@ h1{
     background-color: blue;
     margin:0;
 } */
-
-

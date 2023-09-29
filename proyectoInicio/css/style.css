@@ -1,6 +1,5 @@
 :root {
     --colorPrincipal: #F76666;
-    --colorSecundario: #02052F;
     --fuentePrincipal: 'Open Sans', sans-serif;
     --fuenteBotones: "DinBold", sans-serif;
 }
@@ -8,12 +7,19 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
 }
 
 body {
     font-size: 16px;
     font-family: var(--fuentePrincipal);
 }
+
+
 
 /* esto me permite conseguir 10 px = 1rem; sin eso 16px=1rem*/
 
@@ -340,7 +346,27 @@ h1 {
 
 /* ESTILOS SECCION VIDEO  */
 
+.seccionVideo{
+    display:flex;
+    justify-content: center;
+
+}
+
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS  */
+
+.paraQuien {
+    margin-left:20px;
+}
+
+
+.paraQuien h3{
+    text-align: left;
+    color:var(--colorPrincipal);
+    font-weight: 800;
+
+
+
+}
 
 
 /* ESTILOS LOCALIZACIONES  */

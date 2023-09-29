@@ -1,0 +1,106 @@
+.section1 h2{
+height:100px;
+background-color: blue;
+}
+
+.section2>div>h2{
+    height:100px;
+background-color: blue;
+
+}
+
+.margin{
+    margin:50px;
+    height:200px;
+    background-color: yellow;
+}
+
+.padding{
+    padding:50px;
+    height:200px;
+    background-color: rgb(88, 209, 112);
+}
+
+
+.displays1 p{
+    background-color: blue;
+}
+
+.displays1 a{
+    background-color: chartreuse;
+}
+
+.displays1 h1{
+    background-color:aquamarine;
+}
+
+.displays1 h3{
+    background-color: bisque;
+}
+
+.displays1 h6{
+    background-color: blueviolet;
+}
+
+.displays1 div p{
+    background-color: brown;
+
+}
+
+/* invertidos */
+
+.displays2 p{
+    background-color: blue;
+    display: inline;
+}
+
+.displays2 a{
+    background-color: chartreuse;
+    display: block;
+}
+
+.displays2 h1{
+    background-color:aquamarine;
+    display: inline;
+}
+
+.displays2 h3{
+    background-color: bisque;
+    display: inline;
+}
+
+.displays2 h6{
+    background-color: blueviolet;
+    display: inline;
+}
+
+.displays2 div{
+    background-color: brown;
+    display: inline;
+
+}
+
+/* JUSTIFY Y ALIGN */
+
+.seccionJustify1{
+    height:300px;
+    width:300px;
+    display:flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    align-items: end;
+    background-color: green;
+}
+
+.seccionJustify2{
+    height:300px;
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: blue;
+}
+
+
+

@@ -1,5 +1,6 @@
 :root {
     --colorPrincipal: #F76666;
+    --colorSecundario: #02052F; 
     --fuentePrincipal: 'Open Sans', sans-serif;
     --fuenteBotones: "DinBold", sans-serif;
 }
@@ -355,7 +356,9 @@ h1 {
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS  */
 
 .paraQuien {
-    margin-left:20px;
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 100px;
 }
 
 
@@ -363,11 +366,133 @@ h1 {
     text-align: left;
     color:var(--colorPrincipal);
     font-weight: 800;
+    font-family: var(--fuentePrincipal);
+}
 
+.paraQuien h2{
+    font-family: var(--fuentePrincipal);
+    color:var(--colorSecundario);
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin-bottom:22px;
+}
 
+.paraQuienIzquierda h4{
+    font-family: var(--fuentePrincipal);
+    color:var(--colorSecundario);
+    font-weight: 800;
 
 }
 
+.paraQuien>div{
+    flex:1;
+    max-width:50%;
+}
+
+.paraQuienIzquierda{
+    margin-right: 15px;
+}
+
+.paraQuien p{
+    font-family: var(--fuentePrincipal);
+    font-size:1.4rem;
+    font-weight: 400;
+    margin-bottom:25px;
+    line-height: 1.8;
+}
+
+.paraQuien span{
+    font-weight: 800;
+}
+
+.paraQuienIzquierda a{
+    color:var(--colorPrincipal);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    display: block;
+    text-decoration: underline;
+
+}
+
+.paraQuienIzquierda h5{
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+    font-size:1.4rem;
+    line-height:1.5;
+    color:var(--colorSecundario);}
+
+.paraQuienIzquierda .botonInfografia{
+    background: #F76666;
+    padding: 20px 40px;
+    border-color: #fff;
+    color:white;
+    font-family: "DinBold", sans-serif;
+    min-height: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 24px 94px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.paraQuienDerecha {
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    padding-top:30px;
+}
+
+.paraQuienDerSup{
+    background-color: var(--colorPrincipal);
+    padding:60px 30px;
+}
+
+.paraQuienDerSup h5{
+    font-family: var(--fuentePrincipal);
+    color:white;
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin-bottom:0;
+    margin-top: 0;
+}
+
+.paraQuienDerSup span{
+    color:black;
+}
+.paraQuienDerSup .destacarAzul{
+    color:var(--colorSecundario);
+}
+
+.paraQuienDerechaInf {
+   
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paraQuienDerechaInf h5{
+    flex:1;
+    max-width: 50%;
+    font-family: var(--fuentePrincipal);
+    padding: 40px 50px;
+    background-color:black;
+    color:white;
+    margin-right:20px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.paraQuienDerechaInf span{
+    color: var(--colorPrincipal);
+}
+
+.paraQuienDerechaInf img{
+    margin-top:10px;
+    height: 40px;
+    width: 40px;
+}
 
 /* ESTILOS LOCALIZACIONES  */
 
@@ -375,6 +500,77 @@ h1 {
     background-color: black;
     color: white;
 }
+
+.localizaciones .contenedor{
+padding: 90px 0 100px;
+display: flex;
+}
+
+.localizaciones .contenedor div{
+    width: 25%;
+
+}
+
+.seccionContactar{ 
+    background-color: var(--colorPrincipal);
+    text-transform: uppercase;
+    padding: 90px 0px 70px;
+}
+
+.seccionContactar>div{s
+
+}
+
+.cajaContacto{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cajaContacto p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.cajaContacto img{
+    margin-right: 15px;
+    margin-top:10px;
+    height: 40px;
+    width: 40px;
+}
+
+.cajaLlamanos{
+    margin-right:10px;
+    flex:1;
+    max-width:50%;
+    background-color: white;
+    padding-left: 100px !important;
+    padding-top: 40px!important;
+    padding-bottom: 40px!important;
+    padding-right: 40px!important;
+    border-radius: 10px;
+
+}
+
+.cajaEscribenos{
+    margin-left:10px;
+    flex:1;
+    max-width: 50%;
+    background-color: white;
+    padding-left: 100px !important;
+    padding-top: 40px!important;
+    padding-bottom: 40px!important;
+    padding-right: 40px!important;
+    border-radius: 10px;
+}
+
+
+
+
 
 /* ESTILOS CONTACTAR */
 

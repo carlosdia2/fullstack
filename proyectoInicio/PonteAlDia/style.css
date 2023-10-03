@@ -1,80 +1,80 @@
-.section1 h2{
-height:100px;
-background-color: blue;
+.section1 h2 {
+    height: 100px;
+    background-color: blue;
 }
 
-.section2>div>h2{
-    height:100px;
-background-color: blue;
+.section2>div>h2 {
+    height: 100px;
+    background-color: blue;
 
 }
 
-.margin{
-    margin:50px;
-    height:200px;
+.margin {
+    margin: 50px;
+    height: 200px;
     background-color: yellow;
 }
 
-.padding{
-    padding:50px;
-    height:200px;
+.padding {
+    padding: 50px;
+    height: 200px;
     background-color: rgb(88, 209, 112);
 }
 
 
-.displays1 p{
+.displays1 p {
     background-color: blue;
 }
 
-.displays1 a{
+.displays1 a {
     background-color: chartreuse;
 }
 
-.displays1 h1{
-    background-color:aquamarine;
+.displays1 h1 {
+    background-color: aquamarine;
 }
 
-.displays1 h3{
+.displays1 h3 {
     background-color: bisque;
 }
 
-.displays1 h6{
+.displays1 h6 {
     background-color: blueviolet;
 }
 
-.displays1 div p{
+.displays1 div p {
     background-color: brown;
 
 }
 
 /* invertidos */
 
-.displays2 p{
+.displays2 p {
     background-color: blue;
     display: inline;
 }
 
-.displays2 a{
+.displays2 a {
     background-color: chartreuse;
     display: block;
 }
 
-.displays2 h1{
-    background-color:aquamarine;
+.displays2 h1 {
+    background-color: aquamarine;
     display: inline;
 }
 
-.displays2 h3{
+.displays2 h3 {
     background-color: bisque;
     display: inline;
 }
 
-.displays2 h6{
+.displays2 h6 {
     background-color: blueviolet;
     display: inline;
 }
 
-.displays2 div{
+.displays2 div {
     background-color: brown;
     display: inline;
 
@@ -82,24 +82,120 @@ background-color: blue;
 
 /* JUSTIFY Y ALIGN */
 
-.seccionJustify1{
-    height:300px;
-    width:300px;
-    display:flex;
-    flex-direction: row; 
+.seccionJustify1 {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: end;
     background-color: green;
 }
 
-.seccionJustify2{
-    height:300px;
-    width:300px;
-    display:flex;
+.seccionJustify2 {
+    height: 300px;
+    width: 300px;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: end;
     background-color: blue;
+}
+
+.seccionEjemplo1 {
+    display: flex;
+}
+
+.seccionEjemplo1 .caja1 {
+    background-color: rgb(230, 140, 22);
+    flex: 1;
+    max-width: 20%;
+}
+
+.seccionEjemplo1 .caja2 {
+    background-color: aqua;
+    flex: 1;
+    max-width: 30%;
+}
+
+.seccionEjemplo1 .caja3 {
+    background-color: blueviolet;
+    flex: 1;
+    max-width: 50%;
+}
+
+
+.seccionEjemplo2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.seccionEjemplo2 .caja1 {
+    height: 100px;
+    background-color: brown;
+}
+
+.seccionEjemplo2 .caja2 {
+    background-color: blue;
+    height: 200px;
+}
+
+.seccionEjemplo3 {
+    display: flex;
+}
+
+.seccionEjemplo3 .caja1 {
+    flex-direction: row;
+    width: 40%;
+}
+
+.seccionEjemplo3 .caja2 {
+    display: flex;
+    background-color: yellow;
+    width: 60%;
+}
+
+.seccionEjemplo3 .caja2 .parrafo1 {
+    width: 30%;
+}
+
+.seccionEjemplo3 .caja2 .parrafo2 {
+    width: 70%;
+}
+
+
+.ejercicioQueries {
+    height: 500px;
+}
+
+@media (min-width:1131px) {
+    .ejercicioQueries {
+        background-color: brown;
+    }
+}
+
+@media (min-width:933px) and (max-width:1131px) {
+    .ejercicioQueries {
+        background-color: yellow;
+    }
+}
+
+@media (min-width:616px) and (max-width:933px) {
+    .ejercicioQueries {
+        background-color: blue;
+    }
+}
+
+@media (min-width:350px) and (max-width:616px) {
+    .ejercicioQueries {
+        background-color: red;
+    }
+}
+
+@media (max-width:350px) {
+    .ejercicioQueries {
+        background-color: green;
+    }
 }
 
 

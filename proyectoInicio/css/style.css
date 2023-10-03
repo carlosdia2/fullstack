@@ -8,7 +8,6 @@
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
 }
 
 *, *:before, *:after{
@@ -18,7 +17,16 @@ html {
 body {
     font-size: 16px;
     font-family: var(--fuentePrincipal);
+    background-color: red;
 }
+
+/* @media (min-width:900px) {
+
+    body{
+        background-color:yellow;
+    }
+    
+} */
 
 
 
@@ -100,10 +108,33 @@ selector de cadena descendiente */
 
 /* ESTILOS GENERICOS */
 
-.contenedor {
-    max-width: 88%;
-    margin: 0 auto;
-    /*margen de arriba 0 y derecha automatico */
+/* estilos de contenedor para ordenador */
+
+
+
+@media (min-width:1140px){
+    .contenedor{
+        max-width: 88%;
+         margin: 0 auto;
+    }
+}
+
+/* estilos de contenedor para tablets */
+
+@media (max-width: 1140px) and (min-width:768px){
+    .contenedor{
+        max-width: 80%;
+         margin: 0 auto;
+    }
+}
+
+
+/* estilos de contenedor para movil */
+@media (max-width: 768px){
+    .contenedor{
+        max-width: 90%;
+         margin: 0 auto;
+    }
 }
 
 /* .ejerciciocolor {
@@ -517,7 +548,7 @@ display: flex;
     padding: 90px 0px 70px;
 }
 
-.seccionContactar>div{s
+.seccionContactar>div{
 
 }
 
@@ -576,8 +607,52 @@ display: flex;
 
 /* ESTILOS FOOTER */
 
-/* ESTILOS HEADER */
+.enlacesFooter{
 
+    display:flex;
+    padding-top: 50px;
+    padding-bottom: 40px
+}
+
+.paginasLegales{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.cursosZonaCentro{
+width:30%;
+}
+
+
+
+
+.enlacesLogin{
+    display:flex;
+    justify-content:flex-end;
+    height:70px;
+}
+
+
+.parteBajaHeader{
+    display:flex;
+    justify-content:space-between;
+}
+
+.enlacesLogin a {
+font-family: var(--fuentePrincipal);
+color:var(--colorPrincipal);
+margin-right:1px;
+text-decoration: none;
+background-color: transparent;
+}
+
+
+
+
+
+/* ESTILOS HEADER */
 /* DIVS ejemplos */
 
 

@@ -1,6 +1,6 @@
 :root {
     --colorPrincipal: #F76666;
-    --colorSecundario: #02052F; 
+    --colorSecundario: #02052F;
     --fuentePrincipal: 'Open Sans', sans-serif;
     --fuenteBotones: "DinBold", sans-serif;
 }
@@ -10,14 +10,11 @@ html {
     font-size: 62.5%;
 }
 
-*, *:before, *:after{
-    box-sizing: inherit;
-}
-
 body {
     font-size: 16px;
     font-family: var(--fuentePrincipal);
-    background-color: red;
+    /* background-image: linear-gradient(to right,red 50%, blue 90%); */
+
 }
 
 /* @media (min-width:900px) {
@@ -112,28 +109,28 @@ selector de cadena descendiente */
 
 
 
-@media (min-width:1140px){
-    .contenedor{
+@media (min-width:1140px) {
+    .contenedor {
         max-width: 88%;
-         margin: 0 auto;
+        margin: 0 auto;
     }
 }
 
 /* estilos de contenedor para tablets */
 
-@media (max-width: 1140px) and (min-width:768px){
-    .contenedor{
+@media (max-width: 1140px) and (min-width:768px) {
+    .contenedor {
         max-width: 80%;
-         margin: 0 auto;
+        margin: 0 auto;
     }
 }
 
 
 /* estilos de contenedor para movil */
-@media (max-width: 768px){
-    .contenedor{
+@media (max-width: 768px) {
+    .contenedor {
         max-width: 90%;
-         margin: 0 auto;
+        margin: 0 auto;
     }
 }
 
@@ -150,20 +147,31 @@ selector de cadena descendiente */
     padding: 80px 0 180px 0;
 }
 
+@media (max-width:768px) {
+    .fondoMain a {
+        padding: 24px 70px;
+    }
+}
+
 .margenDerecho {
-    margin-right: 40%;
+    margin-right: 33%;
+}
+
+@media (max-width: 1140px) {
+    .margenDerecho {
+        margin-right: 0;
+    }
 }
 
 
 h1 {
-    background-color: var(--colorPrincipal);
+    background-color: rgba(248, 102, 102, 0.65);
     font-weight: 800;
     font-family: var(--fuentePrincipal);
     font-size: 4.5rem;
     padding: 35px;
     margin-bottom: 10px;
     color: white;
-    opacity: 70%;
 }
 
 .fondoMain a {
@@ -179,10 +187,10 @@ h1 {
 
 }
 
-.fondoMain a:hover{
+.fondoMain a:hover {
     background-color: white;
     border-color: var(--colorPrincipal);
-    color:var(--colorPrincipal);
+    color: var(--colorPrincipal);
 
 }
 
@@ -190,6 +198,10 @@ h1 {
     display: flex;
     /*por defecto es row */
     justify-content: space-between;
+}
+
+.flexMain img {
+    margin-right: 10px;
 }
 
 .contenedorLogos {
@@ -204,6 +216,39 @@ h1 {
     border-radius: 12px;
 }
 
+
+@media (max-width:1140px) and (min-width:768px) {
+    .contenedorLogos {
+        padding: 20px 40px;
+    }
+
+    [src="img/Logos-oficiales.png"] {
+        width: 70%;
+    }
+
+    [src="img\Logo-Adecco.png"] {
+
+        width: 30%;
+
+    }
+
+}
+
+@media (max-width:768px) {
+    .contenedorLogos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorLogos img {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+}
+
+
 /* ESTILOS PARA LA IMAGEN DE CORPORACIONES */
 
 /* ESTILOS SECCION CURSOS */
@@ -217,50 +262,50 @@ h1 {
 }
 
 .seccionCursos>h2 {
-    color:var(--colorSecundario);
+    color: var(--colorSecundario);
     font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
-    margin:40px 0px;
+    margin: 40px 0px;
 
 }
 
-.botonesCursos{
-    display:flex;
+.botonesCursos {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 105px;
 }
 
-.botonVerTodo{
+.botonVerTodo {
     background-color: var(--colorPrincipal);
-    color:white;
+    color: white;
     font-family: var(--fuentePrincipal);
     padding: 10px 24px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.4rem;
-    margin-right:0.5rem;
-    margin-left:0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     border: 1px solid var(--colorPrincipal);
 }
 
-.botonMadrid{
-    background-color:white;
-    color:black;
+.botonMadrid {
+    background-color: white;
+    color: black;
     font-family: var(--fuentePrincipal);
     padding: 10px 24px;
     text-decoration: none;
     font-weight: 600;
     border-color: var(--colorPrincipal);
     font-size: 1.4rem;
-    margin-right:0.5rem;
-    margin-left:0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     border: 1px solid var(--colorPrincipal)
 }
 
-.seccionCursos{
-    display:block;
+.seccionCursos {
+    display: block;
     flex-direction: row;
     justify-content: center;
     text-align: center;
@@ -268,23 +313,61 @@ h1 {
 
 }
 
-.cursos{
+.cursos {
     margin-bottom: 120px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.cursos>div{
-    flex:50%;
+.cursos>div {
+    flex: 50%;
     max-width: 50%;
     flex: 2;
-    padding:40px 60px;
+    padding: 40px 60px;
 
 }
 
-.marketing{
-    display:flex;
+/* para tablets: */
+
+@media (max-width:1140px) {
+    .cursos>div {
+        padding: 20px 30px;
+    }
+}
+
+/* para movil */
+
+@media (max-width:768px) {
+    .cursos {
+        padding: 20px 30px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        max-width: 100%;
+
+
+    }
+
+}
+
+@media (max-width:768px) {
+    .cursos {
+        padding: 20px 30px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        max-width: 100%;
+
+    }
+
+}
+
+
+.marketing {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 300px;
@@ -297,8 +380,8 @@ h1 {
 
 }
 
-.videojuegos{
-    display:flex;
+.videojuegos {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 300px;
@@ -306,57 +389,57 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    margin-left:5px;
-    margin-right:5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.cursos div h2{
+.cursos div h2 {
     font-size: 27px;
     margin-bottom: 22px;
-    color:white;
+    color: white;
     font-weight: 700;
 }
 
-.cursos div a{
-    
+.cursos div a {
+
     background-color: white;
-    color:var(--colorPrincipal);
+    color: var(--colorPrincipal);
     font-family: var(--fuentePrincipal);
     padding: 20px 44px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.4rem;
-    margin-right:0.5rem;
-    margin-left:0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     border: 1px solid var(--colorPrincipal);
 }
 
 
 /* ESTILOS SECCION PIDENOSLO */
 
-.seccionPidenoslo{
+.seccionPidenoslo {
     margin-bottom: 150px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.seccionPidenoslo h3{
-   text-align: center;
-   text-transform: uppercase;
-   color:var(--colorSecundario);
-   font-weight: 800;
-   margin-bottom: 40px 0;
-   font-size: 17px;
+.seccionPidenoslo h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--colorSecundario);
+    font-weight: 800;
+    margin-bottom: 40px 0;
+    font-size: 17px;
 }
 
-.seccionPidenoslo div{
-    display:flex;
+.seccionPidenoslo div {
+    display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.seccionPidenoslo a{
+.seccionPidenoslo a {
     color: white;
     background-color: var(--colorPrincipal);
     padding: 15px 34px;
@@ -368,7 +451,7 @@ h1 {
 
 }
 
-.seccionPidenoslo a:hover{
+.seccionPidenoslo a:hover {
 
     background-color: var(--colorSecundario);
     text-decoration: underline;
@@ -378,66 +461,95 @@ h1 {
 
 /* ESTILOS SECCION VIDEO  */
 
-.seccionVideo{
-    display:flex;
+.seccionVideo {
+    display: flex;
     justify-content: center;
+}
 
+/* para tablets  */
+@media (max-width:1140px) {
+    .video iframe {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+/* para movil */
+@media (max-width:768px) {
+    .video iframe {
+        width: 100%;
+        height: 200px;
+    }
 }
 
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS  */
 
 .paraQuien {
-    display:flex;
+    display: flex;
     flex-direction: row;
     margin-bottom: 100px;
 }
 
+@media (min-width:1140px) {
+    .paraQuien {
+        flex-direction: column;
 
-.paraQuien h3{
+    }
+}
+
+
+.paraQuien h3 {
     text-align: left;
-    color:var(--colorPrincipal);
+    color: var(--colorPrincipal);
     font-weight: 800;
     font-family: var(--fuentePrincipal);
 }
 
-.paraQuien h2{
+.paraQuien h2 {
     font-family: var(--fuentePrincipal);
-    color:var(--colorSecundario);
+    color: var(--colorSecundario);
     font-size: 2.7rem;
     font-weight: 800;
-    margin-bottom:22px;
+    margin-bottom: 22px;
 }
 
-.paraQuienIzquierda h4{
+.paraQuienIzquierda h4 {
     font-family: var(--fuentePrincipal);
-    color:var(--colorSecundario);
+    color: var(--colorSecundario);
     font-weight: 800;
 
 }
 
-.paraQuien>div{
-    flex:1;
-    max-width:50%;
+.paraQuien>div {
+    flex: 1;
+    max-width: 50%;
 }
 
-.paraQuienIzquierda{
+@media (max-width:1140px) {
+    .paraQuien>div {
+        flex: 1;
+        max-width: 100%;
+    }
+}
+
+.paraQuienIzquierda {
     margin-right: 15px;
 }
 
-.paraQuien p{
+.paraQuien p {
     font-family: var(--fuentePrincipal);
-    font-size:1.4rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    margin-bottom:25px;
+    margin-bottom: 25px;
     line-height: 1.8;
 }
 
-.paraQuien span{
+.paraQuien span {
     font-weight: 800;
 }
 
-.paraQuienIzquierda a{
-    color:var(--colorPrincipal);
+.paraQuienIzquierda a {
+    color: var(--colorPrincipal);
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -446,18 +558,19 @@ h1 {
 
 }
 
-.paraQuienIzquierda h5{
+.paraQuienIzquierda h5 {
     font-family: var(--fuentePrincipal);
     font-weight: 800;
-    font-size:1.4rem;
-    line-height:1.5;
-    color:var(--colorSecundario);}
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--colorSecundario);
+}
 
-.paraQuienIzquierda .botonInfografia{
+.paraQuienIzquierda .botonInfografia {
     background: #F76666;
     padding: 20px 40px;
     border-color: #fff;
-    color:white;
+    color: white;
     font-family: "DinBold", sans-serif;
     min-height: 50px;
     font-weight: 700;
@@ -471,56 +584,58 @@ h1 {
     margin-left: 45px;
     display: flex;
     flex-direction: column;
-    padding-top:30px;
+    padding-top: 30px;
 }
 
-.paraQuienDerSup{
+.paraQuienDerSup {
     background-color: var(--colorPrincipal);
-    padding:60px 30px;
+    padding: 60px 30px;
 }
 
-.paraQuienDerSup h5{
+.paraQuienDerSup h5 {
     font-family: var(--fuentePrincipal);
-    color:white;
+    color: white;
     font-size: 2.7rem;
     font-weight: 800;
-    margin-bottom:0;
+    margin-bottom: 0;
     margin-top: 0;
 }
 
-.paraQuienDerSup span{
-    color:black;
+.paraQuienDerSup span {
+    color: black;
 }
-.paraQuienDerSup .destacarAzul{
-    color:var(--colorSecundario);
+
+.paraQuienDerSup .destacarAzul {
+    color: var(--colorSecundario);
 }
 
 .paraQuienDerechaInf {
-   
-    display:flex;
+
+    margin-bottom: 500px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.paraQuienDerechaInf h5{
-    flex:1;
+.paraQuienDerechaInf h5 {
+    flex: 1;
     max-width: 50%;
     font-family: var(--fuentePrincipal);
     padding: 40px 50px;
-    background-color:black;
-    color:white;
-    margin-right:20px;
+    background-color: black;
+    color: white;
+    margin-right: 20px;
     text-transform: uppercase;
     text-align: left;
     line-height: 1.5;
 }
 
-.paraQuienDerechaInf span{
+.paraQuienDerechaInf span {
     color: var(--colorPrincipal);
 }
 
-.paraQuienDerechaInf img{
-    margin-top:10px;
+.paraQuienDerechaInf img {
+    margin-top: 10px;
     height: 40px;
     width: 40px;
 }
@@ -532,71 +647,98 @@ h1 {
     color: white;
 }
 
+.localizaciones .contenedor {
+    padding: 90px 0 100px;
+    display: flex;
+}
+
+.localizaciones .contenedor div {
+    padding:24px 10px;
+    color:white;
+    margin:0;
+}
+
+
+@media (max-width:1140px){
+.localizaciones .contenedor div {
+    width:50%;
+}
+}
+
+@media (max-width:768px){
 .localizaciones .contenedor{
-padding: 90px 0 100px;
-display: flex;
+    flex-wrap:wrap;
 }
 
-.localizaciones .contenedor div{
-    width: 25%;
+.localizaciones .contenedor div {
+    width:100%;
+}
 
 }
 
-.seccionContactar{ 
+
+
+.seccionContactar {
     background-color: var(--colorPrincipal);
     text-transform: uppercase;
     padding: 90px 0px 70px;
 }
 
-.seccionContactar>div{
-
+.seccionContactar h3{
+    font-size: 17px;
+    font-family: var(--fuentePrincipal);
+    color:#f8f9fa;
+    font-weight:1;
 }
 
-.cajaContacto{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+.seccionContactar h2{
+    font-size: 27px;
+    color:white;
+    font-weight: 800;
 }
 
-.cajaContacto p{
+
+.cajaContacto {
+    display: flex;
+}
+
+.cajaContacto p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 26px;
-    text-align: center;
+    text-align: left;
     font-weight: 800;
 }
 
-.cajaContacto img{
+.cajaContacto img {
     margin-right: 15px;
-    margin-top:10px;
-    height: 40px;
-    width: 40px;
 }
 
-.cajaLlamanos{
-    margin-right:10px;
-    flex:1;
-    max-width:50%;
+.cajaLlamanos {
+    display: flex;
     background-color: white;
-    padding-left: 100px !important;
-    padding-top: 40px!important;
-    padding-bottom: 40px!important;
-    padding-right: 40px!important;
-    border-radius: 10px;
-
-}
-
-.cajaEscribenos{
-    margin-left:10px;
-    flex:1;
+    margin-right: 15px;
+    border-radius: 0.55rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
     max-width: 50%;
+    padding: 20px;
+
+
+}
+
+.cajaEscribenos {
+    display: flex;
     background-color: white;
-    padding-left: 100px !important;
-    padding-top: 40px!important;
-    padding-bottom: 40px!important;
-    padding-right: 40px!important;
-    border-radius: 10px;
+    margin-right: 15px;
+    border-radius: 0.55rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
 }
 
 
@@ -607,62 +749,97 @@ display: flex;
 
 /* ESTILOS FOOTER */
 
-.enlacesFooter{
+.enlacesFooter {
 
-    display:flex;
+    display: flex;
     padding-top: 50px;
     padding-bottom: 40px
 }
 
-.paginasLegales{
+.paginasLegales {
     padding-top: 50px;
     padding-bottom: 40px;
-    display:flex;
+    display: flex;
     justify-content: space-around;
 }
 
-.cursosZonaCentro{
-width:30%;
+.cursosZonaCentro {
+    width: 30%;
 }
 
 
 
 
-.enlacesLogin{
-    display:flex;
-    justify-content:flex-end;
-    height:70px;
-}
-
-
-.parteBajaHeader{
-    display:flex;
-    justify-content:space-between;
+.enlacesLogin {
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
 }
 
 .enlacesLogin a {
-font-family: var(--fuentePrincipal);
-color:var(--colorPrincipal);
-margin-right:1px;
-text-decoration: none;
-background-color: transparent;
+    padding: 15px;
+    color: var(--colorPrincipal);
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.enlacesLogin a:hover {
+    text-decoration: underline;
+}
+
+.enlacesLogin p {
+    color: var(--colorPrincipal);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.seccionNav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.infoHeader a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #02052F;
+    font-family: var(--fuentePrincipal);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.infoHeader a:hover {
+    text-decoration: underline;
+}
+
+[alt="informate"] {
+    font-family: var(--fuentePrincipal);
+    font-size: 14px;
+    background-color: var(--colorPrincipal);
+    font-weight: 700;
+    color: #fff !important;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding: 6px 12px;
 }
 
 
-
-
-
-/* ESTILOS HEADER */
-/* DIVS ejemplos */
-
-
-/* .fondoAmarillo{
-    height: 300px;
-    background-color: yellow;
+.enlacesLogin a {
+    font-family: var(--fuentePrincipal);
+    color: var(--colorPrincipal);
+    margin-right: 2px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    margin-left: 2px;
 }
 
-.fondoAzul{
-    height:100px;
-    background-color: blue;
-    margin:0;
-} */
+.enlacesLogin a:hover {
+    text-decoration: underline;
+}

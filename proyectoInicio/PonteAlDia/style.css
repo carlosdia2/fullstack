@@ -198,5 +198,25 @@
     }
 }
 
+/* seccion  */
+
+.ejercicioAR{
+
+    height:500px;
+    background-color: blue;
+    position:relative;
+}
+
+.ejercicioAR div{
+    width:100px;
+    height:100px;
+    background-color: red;
+    position:absolute;
+    bottom:0;
+    right:0;
+    top:200px;
+}
+
+
 
 

@@ -218,5 +218,37 @@
 }
 
 
+.ejercicioGrid div{
+    border: 1px solid black;
+}
+
+.ejercicioGrid{
+    height:500px;
+    display:grid;
+    grid-template-columns:100fr 300fr 200fr 150fr;
+    grid-template-rows:5fr, 15fr, 16fr, 7fr;
+}
+
+
+
+
+.ejercicioRepeat{
+    display:grid;
+    height:300px;
+    /*  grid-template-rows:1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
+   */
+    grid: 2fr 2fr/ 1fr 1fr;
+    gap:20px;
+}
+
+
+.ejercicioRepeat div{
+    border: 5px solid red;
+}
+
+
+
+
 
 

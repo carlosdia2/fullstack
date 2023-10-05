@@ -658,24 +658,28 @@ h1 {
     margin:0;
 }
 
+/* localizaciones con grid */
 
-@media (max-width:1140px){
-.localizaciones .contenedor div {
-    width:50%;
-}
-}
-
-@media (max-width:768px){
-.localizaciones .contenedor{
-    flex-wrap:wrap;
+.localizacionesGrid {
+    background-color: black;
+    color: white;
 }
 
-.localizaciones .contenedor div {
+.localizacionesGrid .contenedor {
+    padding: 90px 0 100px;
+    display: grid;
+    grid: 1fr / repeat(4,1fr);
+}
+
+.localizacionesGrid .contenedor div {
+    padding:24px 10px;
+    color:white;
+    margin:0;
+}
+
+.localizacionesGrid .contenedor div {
     width:100%;
 }
-
-}
-
 
 
 .seccionContactar {
@@ -771,16 +775,16 @@ h1 {
 
 
 .enlacesLogin {
+    margin-top:20px;
     display: flex;
     justify-content: flex-end;
     height: 70px;
 }
 
 .enlacesLogin a {
-    padding: 15px;
     color: var(--colorPrincipal);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 17px;
     margin-left: 3px;
     margin-right: 3px;
 }
@@ -801,6 +805,7 @@ h1 {
 .seccionNav {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
 
 }
 
@@ -809,7 +814,7 @@ h1 {
     margin-right: 10px;
     color: #02052F;
     font-family: var(--fuentePrincipal);
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 700;
     text-decoration: none;
 }

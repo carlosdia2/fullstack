@@ -1,0 +1,73 @@
+/* Reset de estilos */
+
+:root{
+    --colorPrincipal: yellow;
+    --fuentePrincipal: Arial;
+}
+
+body,
+h1,
+h2,
+p {
+    color:white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: rgba(36,99,117,1);
+background-image: url("./img/wallpaper.webp");
+}
+
+
+
+header {
+background: rgb(14, 41, 48);
+opacity: 90%;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+ 
+}
+
+nav a {
+    color:var(--colorPrincipal);
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top:40px;
+
+}
+
+nav a:hover{
+text-decoration:wavy;
+color:yellowgreen;
+}
+
+section {
+    padding: 40px;
+}
+
+section h2 {
+    line-height: 1.8;
+    color: var(--colorPrincipal);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

@@ -649,7 +649,6 @@ h1 {
 
 .localizaciones .contenedor {
     padding: 90px 0 100px;
-    display: flex;
 }
 
 .localizaciones .contenedor div {
@@ -669,7 +668,9 @@ h1 {
     padding: 90px 0 100px;
     display: grid;
     grid: 1fr / repeat(4,1fr);
+
 }
+
 
 .localizacionesGrid .contenedor div {
     padding:24px 10px;
@@ -720,7 +721,7 @@ h1 {
 }
 
 .cajaLlamanos {
-    display: flex;
+
     background-color: white;
     margin-right: 15px;
     border-radius: 0.55rem;
@@ -734,7 +735,7 @@ h1 {
 }
 
 .cajaEscribenos {
-    display: flex;
+
     background-color: white;
     margin-right: 15px;
     border-radius: 0.55rem;

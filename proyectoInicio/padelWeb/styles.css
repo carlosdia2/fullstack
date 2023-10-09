@@ -1,15 +1,12 @@
-/* Reset de estilos */
-
 :root{
-    --colorPrincipal: yellow;
-    --fuentePrincipal: Arial;
+    --colorPrincipal: red;
+    --fuentePrincipal: Times;
+    --colorSecundario: blue;
+    ---fuenteSecundaria: arial;
 }
 
-body,
-h1,
-h2,
-p {
-    color:white;
+/* Reset de estilos */
+body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
@@ -17,19 +14,22 @@ p {
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background: rgba(36,99,117,1);
-background-image: url("./img/wallpaper.webp");
+    background-color: #f0f0f0;
 }
-
-
 
 header {
-background: rgb(14, 41, 48);
-opacity: 90%;
     color: #fff;
     text-align: center;
-    padding: 5px 0;
+    padding: 20px 0;
+    background: rgba(24,124,201,1);
+background: -moz-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24,124,201,1)), color-stop(100%, rgba(20,97,169,1)));
+background: -webkit-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+background: -o-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+background: -ms-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+background: linear-gradient(to right, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
 }
+
 
 nav ul {
     list-style: none;
@@ -38,36 +38,40 @@ nav ul {
 nav li {
     display: inline;
     margin-right: 20px;
- 
 }
 
 nav a {
-    color:var(--colorPrincipal);
+    text-align: end;
     text-decoration: none;
-    font-family: monospace;
-    font-weight: 700;
+    color: #fff;
     font-size: 17px;
-    margin-top:40px;
-
+    font-weight: 700;
 }
 
 nav a:hover{
-text-decoration:wavy;
-color:yellowgreen;
+    color:yellow;
 }
 
-section {
-    padding: 40px;
+#main .fondoMain{
+display:flex;
+justify-content: center;
+height:500px;
+background-image: url(img/wallpaper.webp);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 }
+
+.fondoMain h1{
+
 
 section h2 {
-    line-height: 1.8;
-    color: var(--colorPrincipal);
+    color: #333;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0;
 }

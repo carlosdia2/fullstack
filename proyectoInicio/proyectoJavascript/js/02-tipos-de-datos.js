@@ -27,8 +27,8 @@ console.log("Metodo indexOf:",producto1.includes("DUERME"));
 crear 3 variables de tipo string e imprimir en consola las tres usando length, indexOf y 
 
 let string1 = "hola";
-let string2 = "hola2";
-let string3 = "hola2";
+string2 = "hola2";
+string3 = "hola2";
 
 console.log("la variable 1 tiene:", string1.length, "caracteres.");
 console.log("la l de 'hola' está en la posicion:", string2.indexOf("l"));

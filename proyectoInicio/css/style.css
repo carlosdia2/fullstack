@@ -148,6 +148,12 @@ selector de cadena descendiente */
 }
 
 @media (max-width:768px) {
+    .fondoMain a{
+        padding: 24px 70px;
+    }
+}
+
+@media (max-width:768px) {
     .fondoMain a {
         padding: 24px 70px;
     }
@@ -318,6 +324,13 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media (max-width:768px) {
+    .cursosOfertados{
+        flex-direction: column;
+    }
+    
 }
 
 .cursos>div {
@@ -498,6 +511,8 @@ h1 {
 }
 
 
+
+
 .paraQuien h3 {
     text-align: left;
     color: var(--colorPrincipal);
@@ -642,21 +657,6 @@ h1 {
 
 /* ESTILOS LOCALIZACIONES  */
 
-.localizaciones {
-    background-color: black;
-    color: white;
-}
-
-.localizaciones .contenedor {
-    padding: 90px 0 100px;
-}
-
-.localizaciones .contenedor div {
-    padding:24px 10px;
-    color:white;
-    margin:0;
-}
-
 /* localizaciones con grid */
 
 .localizacionesGrid {
@@ -682,6 +682,21 @@ h1 {
     width:100%;
 }
 
+@media (max-width:1140px) {
+    .localizacionesGrid .contenedor div {
+        width: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    .localizacionesGrid .contenedor{
+        flex-wrap: wrap;
+    }
+    .localizacionesGrid .contenedor div {
+        width: 100%;
+    }
+}
+
 
 .seccionContactar {
     background-color: var(--colorPrincipal);
@@ -702,10 +717,6 @@ h1 {
     font-weight: 800;
 }
 
-
-.cajaContacto {
-    display: flex;
-}
 
 .cajaContacto p {
     font-family: 'Open Sans', sans-serif;
@@ -754,22 +765,44 @@ h1 {
 
 /* ESTILOS FOOTER */
 
-.enlacesFooter {
+.seccionFooter{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
 
+
+.enlacesFooter {
     display: flex;
     padding-top: 50px;
-    padding-bottom: 40px
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+
+
+.enlacesFooter a {
+    font-family: var(--fuentePrincipal);
+    color: var(--colorSecundario);
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-right: 80px;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
 .paginasLegales {
-    padding-top: 50px;
-    padding-bottom: 40px;
-    display: flex;
-    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
 }
 
-.cursosZonaCentro {
-    width: 30%;
+
+.paginasLegales a{
+    font-family: var(--fuentePrincipal);
+    color: var(--colorSecundario);
+    font-size: 1.7rem;
+    margin-right: 80px;
+    line-height: 1.2;
 }
 
 

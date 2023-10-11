@@ -9,20 +9,29 @@
 html {
   font-size: 62.5%;
 }
-
-.logoheader img{
-  height: 150px;
-  width: auto;
+ 
+.margenes{
+  width: 50%;
+  margin: 0 auto;
 }
 
 .logoheader{
-  justify-content: left;
-  align-items: left;
+  display:flex;
+  justify-content: flex-start ;
+  align-items: start;
 }
+
+.logoheader img{
+  height: 100px;
+  width:auto;
+}
+
+
 
 /* Reset de estilos */
 body, h1, h2, p {
     margin: 0;
+    margin-top:20px;
     padding: 0;
 }
 
@@ -33,19 +42,18 @@ body {
 }
 
 /* INICIO DEL HEADER */
-
 header {
     color: #fff;
     text-align: center;
     padding: 20px 0;
     background: rgba(24,124,201,1);
-background: -moz-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24,124,201,1)), color-stop(100%, rgba(20,97,169,1)));
-background: -webkit-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-background: -o-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-background: -ms-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-background: linear-gradient(to right, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-}
+    background: -moz-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24,124,201,1)), color-stop(100%, rgba(20,97,169,1)));
+    background: -webkit-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: -o-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: -ms-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: linear-gradient(to right, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+  }
 
 nav ul {
     list-style: none;
@@ -69,10 +77,7 @@ nav a:hover{
 }
 
 
-.margenes{
-  width: 50%;
-  margin: 0 auto;
-}
+
 
 /* .main .fondoMain{
 display:flex;
@@ -90,19 +95,48 @@ section h2 {
 }
 
 footer {
-    color: #fff;
     text-align: center;
     padding: 10px 0;
 }
 
-.logofooter img{
-    height: 230px;
-    width: auto;
-    justify-content: center;
-    align-items: end;
+.logofooter {
+  display:flex;
+  justify-content: center;
 }
 
+.logofooter img{
+  height: 120px;
+  width:auto;
+}
+
+/* SECCION REGLAS DEL PADEL(LUIS) INICIO*/
+.sectionReglasPadel {
+  padding: 50px 0;
+}
+.ReglasPadelSuperior h2{
+  background-color: var(--colorPrincipal);
+  font-family: var(--fuentePrincipal);
+  
+}
+.ReglasPadelInferior{
+  display: flex;
+}
+/* SECCION REGLAS DEL PADEL(LUIS) FINAL*/
+
+/* SECCION NOTICIA(LUIS) INICIO*/
+/* SECCION NOTICIAS(LUIS) FINAL*/
+
+/* SECCION SAMU INICIO */
+.calendario{
+  display: contents;
+}
+
+/* SECCION SAMU FINAL */
+
+
 /* SECCIÓN CARLO - INICIO */
+
+/* Sección galería vídeos */
 /* Estilo para el contenedor principal de la galería */
 .videos {
     display: flex;
@@ -133,7 +167,7 @@ footer {
   }
   
   .anterior, .siguiente {
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: #007bff; /* Cambia el color de fondo según tus preferencias */
     color: #fff;
     border: none;
@@ -148,4 +182,38 @@ footer {
   .anterior {
     margin-right: 10px;
   }
+
+  /* Sección entrenamiento y preparación */
+  .consejos li, .preparacion li{
+    list-style-type: upper-roman;  /*para aplicar numeros a una lista*/
+    font-size: 1.5rem;  
+  }
+
+  footer{
+    text-align: center;
+    background-color: var(--colorSecundario);
+    color: #fff;
+    padding: 20px;
+  }
+
+  .redes a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+  }
+
+  .redes img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .copyright{
+    margin-top: 20px;
+  }
+
+  .copyright img{
+    width: 100px;
+    /* height: 100px; */
+  } 
+  
   /* SECCIÓN CARLO - FINAL */

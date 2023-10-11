@@ -1,7 +1,8 @@
+//SECCIÓN CARLO - INICIO
 document.addEventListener("DOMContentLoaded", function () {
-    const galeriaVideos = document.querySelector(".video-gallery");
-    const anterior = document.querySelector(".prev-button");
-    const siguiente = document.querySelector(".next-button");
+    const galeriaVideos = document.querySelector(".galeria-videos");
+    const anterior = document.querySelector(".anterior");
+    const siguiente = document.querySelector(".siguiente");
     const videos = galeriaVideos.querySelectorAll("iframe");
     let videoActual = 0;
   
@@ -35,3 +36,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Muestra el primer video al cargar la página
     mostrarVideoActual();
   });  
+  //SECCIÓN CARLO - FINAL

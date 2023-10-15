@@ -662,10 +662,10 @@ h1 {
 .localizacionesGrid {
     background-color: black;
     color: white;
+    padding: 100px 0;
 }
 
 .localizacionesGrid .contenedor {
-    padding: 90px 0 100px;
     display: grid;
     grid: 1fr / repeat(4,1fr);
 
@@ -676,10 +676,6 @@ h1 {
     padding:24px 10px;
     color:white;
     margin:0;
-}
-
-.localizacionesGrid .contenedor div {
-    width:100%;
 }
 
 @media (max-width:1140px) {
@@ -695,6 +691,15 @@ h1 {
     .localizacionesGrid .contenedor div {
         width: 100%;
     }
+}
+
+.cajas-localizaciones h2 {
+    color: white;
+    font-size: 27px;
+    font-weight: 700px;
+    font-family: var(--fuenteBotones);
+    margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 
@@ -717,6 +722,10 @@ h1 {
     font-weight: 800;
 }
 
+.cajaContacto {
+    display: flex;
+}
+
 
 .cajaContacto p {
     font-family: 'Open Sans', sans-serif;
@@ -732,7 +741,7 @@ h1 {
 }
 
 .cajaLlamanos {
-
+    display: flex;
     background-color: white;
     margin-right: 15px;
     border-radius: 0.55rem;
@@ -746,7 +755,7 @@ h1 {
 }
 
 .cajaEscribenos {
-
+    display: flex;
     background-color: white;
     margin-right: 15px;
     border-radius: 0.55rem;

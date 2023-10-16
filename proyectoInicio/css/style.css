@@ -582,18 +582,22 @@ h1 {
 }
 
 .paraQuienIzquierda .botonInfografia {
-    background: #F76666;
-    padding: 20px 40px;
-    border-color: #fff;
+    background-color: var(--colorPrincipal);
     color: white;
-    font-family: "DinBold", sans-serif;
-    min-height: 50px;
-    font-weight: 700;
-    font-size: 14px;
-    padding: 24px 94px;
     text-decoration: none;
+    padding: 20px 40px;
     display: inline-block;
+    text-transform: uppercase;
 }
+
+
+.paraQuienIzquierda .botonInfografia:hover {
+    background-color: white;
+    color:var(--colorPrincipal);
+    border: 2px solid var(--colorPrincipal);
+}
+
+
 
 .paraQuienDerecha {
     margin-left: 45px;
@@ -626,10 +630,12 @@ h1 {
 
 .paraQuienDerechaInf {
 
-    margin-bottom: 500px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: -60px;
+    margin-right: 40px;
 }
 
 .paraQuienDerechaInf h5 {
@@ -662,10 +668,10 @@ h1 {
 .localizacionesGrid {
     background-color: black;
     color: white;
+    padding: 100px 0;
 }
 
 .localizacionesGrid .contenedor {
-    padding: 90px 0 100px;
     display: grid;
     grid: 1fr / repeat(4,1fr);
 
@@ -676,10 +682,6 @@ h1 {
     padding:24px 10px;
     color:white;
     margin:0;
-}
-
-.localizacionesGrid .contenedor div {
-    width:100%;
 }
 
 @media (max-width:1140px) {
@@ -695,6 +697,15 @@ h1 {
     .localizacionesGrid .contenedor div {
         width: 100%;
     }
+}
+
+.cajas-localizaciones h2 {
+    color: white;
+    font-size: 27px;
+    font-weight: 700px;
+    font-family: var(--fuenteBotones);
+    margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 
@@ -717,6 +728,10 @@ h1 {
     font-weight: 800;
 }
 
+.cajaContacto {
+    display: flex;
+}
+
 
 .cajaContacto p {
     font-family: 'Open Sans', sans-serif;
@@ -732,7 +747,7 @@ h1 {
 }
 
 .cajaLlamanos {
-
+    display: flex;
     background-color: white;
     margin-right: 15px;
     border-radius: 0.55rem;
@@ -746,7 +761,7 @@ h1 {
 }
 
 .cajaEscribenos {
-
+    display: flex;
     background-color: white;
     margin-right: 15px;
     border-radius: 0.55rem;

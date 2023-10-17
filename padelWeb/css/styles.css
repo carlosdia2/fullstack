@@ -68,6 +68,22 @@ body {
     background: linear-gradient(to right, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
   }
 
+.headerUp{
+  display:flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+ .headerUp a{
+  padding-right:20px;
+  padding-left: 20px;
+    text-align: end;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
 nav ul {
     list-style: none;
 }

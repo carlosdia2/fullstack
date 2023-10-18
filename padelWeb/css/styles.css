@@ -17,12 +17,12 @@ html {
 
 .logoheader{
   display:flex;
-  justify-content: flex-start ;
+  justify-content: flex-start;
   align-items: start;
 }
 
 .logoheader img{
-  height: 100px;
+  height: 300px;
   width:auto;
 }
 
@@ -83,6 +83,13 @@ body {
     font-size: 17px;
     font-weight: 700;
   }
+  
+  .headerDown{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+  }
+
 
 nav ul {
     list-style: none;
@@ -281,13 +288,16 @@ section h2 {
   /* Sección footer */
 
   footer{
-    text-align: center;
-    background-color: var(--colorSecundario);
     color: #fff;
+    text-align: center;
     padding: 20px 0;
-    content: 1;
-    display: flex;
-    flex: 1;
+    background: rgba(24,124,201,1);
+    background: -moz-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24,124,201,1)), color-stop(100%, rgba(20,97,169,1)));
+    background: -webkit-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: -o-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: -ms-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: linear-gradient(to right, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
   }
 
   .redes a{
@@ -309,5 +319,7 @@ section h2 {
     width: 100px;
     /* height: 100px; */
   } 
+
+
   
   /* SECCIÓN CARLO - FINAL */

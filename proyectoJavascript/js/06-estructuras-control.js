@@ -188,4 +188,162 @@ switch (numeroSecreto+10){
     
 }
 
+//iteradores o bucles!!!
+
+//for, while y do while.
+
+//ejercicio Mostrar por pantalla del numero 100 al 200;
+
+// for(let i=100; i<=200; i++){
+//     console.log(i);
+// }
+
+// for(let i=2; i<49; i+=2){
+//     console.log(i);
+
+
+// }
+
+
+//mostrar del numero 100 al numero 0, y que vaya de 5 en 5.
+
+// for(let i=100;i>=0;i-=5){
+//     console.log(i);
+// }
+ 
+//Ejercicio: mostrar del 1 al 20 todos los numeros pares
+
+//nota: 1%2===0 me da la condicion de par
+
+for(let i=1; i<=20; i++){
+    if(i%2===0){
+        console.log("numeros pares:", i);
+    }
+    else{
+        console.log("este numero no es par: ", i)
+    }
+}
+
+// crear un array plano y mostrar cada elemento del array
+
+
+let array9= [1,2,3,4,5,6,7,8,9];
+
+for(let i=0; i<array9.length; i++){
+    console.log(array9[i])
+}
+
+//recorrer el array e imprimir todos los elementos 
+let carrito = [ 
+
+    {
+        nombre: "nombre1",
+        precio: 4
+    },
+    {
+        nombre: "nombre2",
+        precio: 3
+    },
+    {
+        nombre: "nombre3",
+        precio: 2
+    },
+    {
+        nombre: "nombre4",
+        precio: 1
+    },
+
+];
+
+for(let i=0;i<carrito.length; i++){
+    console.log(carrito[i]);
+    console.log(carrito[i].nombre);
+}
+
+//while
+
+// let i=0;
+// while(i<100){
+//     i++;
+//     console.log(i);
+    
+// }
+
+// let j=0;
+
+// do{
+//     console.log(j);
+
+// } while {j<10};
+
+
+//en el for, el indice va dentro del parentesis despues
+
+// en el while, dentro
+
+//y en el do while, dentro pero al final (por eso, se ejecuta y luego revisa)
+
+//otro ejercicio:
+
+//mostrar los numeros pares, pero hacerlo ahora con while.
+//mostrar del 1 al 20 todos los numeros pares incluidos ambos
+
+
+//nota: 1%2===0 me da la condicion de par
+ 
+
+// let jj=1;
+
+// while(jj<=20){
+//     if(jj%2===0){
+//         console.log("par:", jj);
+//     }
+// }
+
+//una funcion que dado un argumento me diga si es positivo, es negativo,es = 0;
+
+//con un if dentro
+
+function funcion11(x){
+    if(x>0){
+        console.log("el numero es positivo");
+    } else if (x=0){ console.log("el numero es igual a 0");
+
+    } else {console.log("el numero es negativo")}
+}
+
+funcion11(23);
+
+//crear una funcion que recibe como argumento un numero positivo (7) y muestre por consola, los numeros desde el 7 hasta el 0 (descendiendo);
+
+function regresion(x){
+
+    for(let i=x; i>=0; i--){
+        console.log(i);
+    }
+
+}
+
+regresion(16);
+
+//crear una funcion que se llama acumulacion
+//recibe un argumento de entrada y me devuelve la suma de todos los numeros entre cero y ese argumento
+
+
+let totalAcum=0;
+
+function acumulacion(k){
+    for(let i=k;i>=0;i--){
+        totalAcum=totalAcum+1;
+    }
+    console.log(totalAcum);
+}
+
+acumulacion(22);
+
+//una funcion que reciba un argumento, que me calcule la media de la suma de todo 
+
+
+
+
 

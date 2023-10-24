@@ -406,5 +406,6 @@ console.log(array11);
 
 
 
+//mostrar numeros del 2 al 49 (pero solo los pares, o sea, de dos en dos)
 
 

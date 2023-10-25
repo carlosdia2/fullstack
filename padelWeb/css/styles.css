@@ -15,19 +15,6 @@ html {
   margin: 0 auto;
 }
 
-.logoheader{
-  display:flex;
-  justify-content: flex-start;
-  align-items: start;
-}
-
-.logoheader img{
-  height: 300px;
-  width:auto;
-}
-
-
-
 /* Reset de estilos */
 p {
     font-family: var(--fuentePrincipal);
@@ -55,61 +42,60 @@ body {
 }
 
 /* INICIO DEL HEADER */
-.seccionHeader {
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    background: rgba(24,124,201,1);
-    background: -moz-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24,124,201,1)), color-stop(100%, rgba(20,97,169,1)));
-    background: -webkit-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-    background: -o-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-    background: -ms-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-    background: linear-gradient(to right, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-  }
-
-.headerUp{
-  display:flex;
-  justify-content: flex-end;
-  margin-right: 40px;
+header {
+  color: #fff;
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(24, 124, 201, 1);
+  background: -moz-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24, 124, 201, 1)), color-stop(100%, rgba(20, 97, 169, 1)));
+  background: -webkit-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  background: -o-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  background: linear-gradient(to right, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
 }
 
- .headerUp a{
-  padding-right:20px;
+/* Estilos para el logotipo */
+.logo img {
+  max-width: 100px; /* Tamaño máximo del logotipo */
   padding-left: 20px;
-    text-align: end;
-    text-decoration: none;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 700;
-  }
-  
-  .headerDown{
-    display:flex;
-    align-items:center;
-    justify-content: space-evenly;
-  }
-
-
-nav ul {
-    list-style: none;
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
+/* Estilos para la sección de la derecha */
+.seccion-derecha {
+  display: flex; /* Mostrar elementos en una fila */
+  gap: 20px; /* Espaciado entre elementos */
 }
 
-nav a {
-    text-align: end;
-    text-decoration: none;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 700;
+/* Estilos para las opciones de idioma y usuario */
+.opciones a {
+  color: #C0C0C0; /* Color de texto */
+  text-decoration: none; /* Sin subrayado en enlaces */
+  padding: 10px;
+  font-size: 20px;
 }
 
-nav a:hover{
-    color:yellow;
+.opciones a:hover{
+  background-color: rgba(33, 93, 152, 1);
+  color: white;
+}
+
+/* Estilos para la barra de búsqueda */
+.barra input {
+  padding: 5px;
+  margin-right: 20px; /* Espaciado interior */
+  border: 1px solid #ccc; /* Borde con color de fondo */
+}
+
+.barra button {
+  background-color: #1FD94A; /* Color de fondo del botón de búsqueda */
+  color: #fff; /* Color de texto del botón */
+  border: none; /* Sin borde en el botón */
+  padding: 5px 10px;
+  margin-right: 20px; /* Espaciado interior del botón */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
 }
 
 
@@ -214,6 +200,13 @@ section h2 {
   text-align: center; /* Centrar el texto */
   border-radius: 20px 20px;
 }
+
+
+/*SECCION CARLOS: DEFINICION e HISTORIA */
+
+
+
+
 
 /* SECCION REGLAS DEL PADEL(LUIS) FINAL*/
 

@@ -1,0 +1,150 @@
+:root{
+    --colorPrincipal: #3383A3;
+    --fuentePrincipal: 'Roboto Slab', serif;
+    --colorSecundario: #AECBD2;
+    --fuenteSecundaria: arial;
+    --colorTerciario: orange;
+}
+html {
+    font-size: 62.5%;
+  }
+   
+  .margenes{
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  /* Reset de estilos */
+  p {
+      font-family: var(--fuentePrincipal);
+      font-size: 25px;
+      margin: 0;
+      margin-top: 20px;
+      padding: 0;
+      line-height:1.5;
+  }
+  
+  h1,h2 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  
+  
+  /* Estilos generales */
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      background: rgb(106,240,10);
+      background: linear-gradient(333deg, rgba(106,240,10,0.4992121848739496) 35%, rgba(0,82,255,0.5048144257703081) 100%);
+  }
+  
+  /* INICIO DEL HEADER */
+  header {
+    color: #fff;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(24, 124, 201, 1);
+    background: -moz-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24, 124, 201, 1)), color-stop(100%, rgba(20, 97, 169, 1)));
+    background: -webkit-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+    background: -o-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+    background: linear-gradient(to right, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  }
+  
+  /* Estilos para el logotipo */
+  .logo img {
+    max-width: 100px; /* Tamaño máximo del logotipo */
+    padding-left: 20px;
+  }
+  
+  /* Estilos para la sección de la derecha */
+  .seccion-derecha {
+    display: flex; /* Mostrar elementos en una fila */
+    gap: 20px; /* Espaciado entre elementos */
+  }
+  
+  /* Estilos para las opciones de idioma y usuario */
+  .opciones a {
+    color: #fff; /* Color de texto */
+    text-decoration: none; /* Sin subrayado en enlaces */
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  /* Estilos para la barra de búsqueda */
+  .barra input {
+    padding: 5px;
+    margin-right: 20px; /* Espaciado interior */
+    border: 1px solid #ccc; /* Borde con color de fondo */
+  }
+  
+  .barra button {
+    background-color: #1FD94A; /* Color de fondo del botón de búsqueda */
+    color: #fff; /* Color de texto del botón */
+    border: none; /* Sin borde en el botón */
+    padding: 5px 10px;
+    margin-right: 20px; /* Espaciado interior del botón */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+  }
+  
+ 
+  
+  .main .fondoMain{
+  display:flex;
+  justify-content: center;
+  height:500px;
+  background-image: url(../img/wallpaper.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  } 
+  
+  
+  section h2 {
+      color: #333;
+  }
+  
+
+  
+    /* Sección footer */
+  
+    footer{
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      background: rgba(24,124,201,1);
+      background: -moz-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24,124,201,1)), color-stop(100%, rgba(20,97,169,1)));
+      background: -webkit-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+      background: -o-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+      background: -ms-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+      background: linear-gradient(to right, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    }
+  
+    .redes a{
+      text-decoration: none;
+      margin: 0 10px;
+      color: #fff;
+    }
+  
+    .redes img{
+      width: 30px;
+      height: 30px;
+    }
+  
+    .copyright{
+      margin-top: 20px;
+    }
+  
+    .copyright img{
+      width: 100px;
+      /* height: 100px; */
+    } 
+  
+  
+    

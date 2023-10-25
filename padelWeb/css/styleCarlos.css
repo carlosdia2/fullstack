@@ -1,0 +1,311 @@
+:root{
+    --colorPrincipal: #3383A3;
+    --fuentePrincipal: 'Roboto Slab', serif;
+    --colorSecundario: #AECBD2;
+    --fuenteSecundaria: arial;
+    --colorTerciario: orange;
+}
+
+html {
+  font-size: 62.5%;
+}
+ 
+.margenes{
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Reset de estilos */
+p {
+    font-family: var(--fuentePrincipal);
+    font-size: 25px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    line-height:1.5;
+}
+
+h1,h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: rgb(106,240,10);
+    background: linear-gradient(333deg, rgba(106,240,10,0.4992121848739496) 35%, rgba(0,82,255,0.5048144257703081) 100%);
+}
+
+/* INICIO DEL HEADER */
+header {
+  color: #fff;
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(24, 124, 201, 1);
+  background: -moz-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24, 124, 201, 1)), color-stop(100%, rgba(20, 97, 169, 1)));
+  background: -webkit-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  background: -o-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  background: linear-gradient(to right, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+}
+
+/* Estilos para el logotipo */
+.logo img {
+  max-width: 100px; /* Tamaño máximo del logotipo */
+  padding-left: 20px;
+}
+
+/* Estilos para la sección de la derecha */
+.seccion-derecha {
+  display: flex; /* Mostrar elementos en una fila */
+  gap: 20px; /* Espaciado entre elementos */
+}
+
+/* Estilos para las opciones de idioma y usuario */
+.opciones a {
+  color: #C0C0C0; /* Color de texto */
+  text-decoration: none; /* Sin subrayado en enlaces */
+  padding: 10px;
+  font-size: 20px;
+}
+
+.opciones a:hover{
+  background-color: rgba(33, 93, 152, 1);
+  color: white;
+}
+
+/* Estilos para la barra de búsqueda */
+.barra input {
+  padding: 5px;
+  margin-right: 20px; /* Espaciado interior */
+  border: 1px solid #ccc; /* Borde con color de fondo */
+}
+
+.barra button {
+  background-color: #1FD94A; /* Color de fondo del botón de búsqueda */
+  color: #fff; /* Color de texto del botón */
+  border: none; /* Sin borde en el botón */
+  padding: 5px 10px;
+  margin-right: 20px; /* Espaciado interior del botón */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+
+
+.main .fondoMain{
+display:flex;
+justify-content: center;
+height:500px;
+background-image: url(../img/wallpaper.webp);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+} 
+
+
+section h2 {
+    color: #333;
+}
+
+/* .logofooter {
+  display:flex;
+  justify-content: center;
+}
+
+.logofooter img{
+  height: 120px;
+  width:auto;
+}  */
+
+/* SECCION REGLAS DEL PADEL(LUIS) INICIO*/
+
+.reglasPadelSuperior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color:; color de fondo del contenedor */
+  background-size: cover;
+  background-position: top left;
+  padding: 80px 0 80px 0;
+  }
+
+@keyframes girar {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.reglasIcono1 {
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: girar 2s infinite linear;
+}
+
+@keyframes rebotar {
+
+  0%,
+  100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.reglasIcono2 {
+  margin: 0 10px;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  animation: rebotar 01s infinite linear;
+}
+
+.reglasPadelSuperior h2 {
+  font-size: 2.5rem;
+  /* Tamaño del texto */
+  color: black;
+  /* Color del texto */
+  text-align: center;
+  /* Alineación del texto */
+  text-transform: uppercase;
+  /* Convertir el texto a mayúsculas */
+  margin-bottom: 20px;
+  /* Espacio entre el título y el contenido siguiente */
+  font-family: var(--fuentePrincipal);
+  background: rgba(73,155,234,1);
+  background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+  background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+  padding: 50px; /* Espaciado para separar el contenido del borde del contenedor */
+  text-align: center; /* Centrar el texto */
+  text-align: center; /* Centrar el texto */
+  border-radius: 20px 20px;
+}
+
+/* SECCION REGLAS DEL PADEL(LUIS) FINAL*/
+
+
+/* SECCION NOTICIA(LUIS) INICIO*/
+/* SECCION NOTICIAS(LUIS) FINAL*/
+
+/* SECCION SAMU INICIO */
+.calendario{
+  display: contents;
+}
+
+/* SECCION SAMU FINAL */
+
+
+/* SECCIÓN CARLO - INICIO */
+
+/* Sección galería vídeos */
+
+/* Estilo para el contenedor principal de la galería */
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Estilo para el área de visualización de video */
+  .galeria-videos {
+    position: relative;
+    width: 1120px;
+    height: 630px;
+    overflow: hidden;
+  }
+  
+  /* Estilo para los iframes de video (ajusta el tamaño según tus necesidades) */
+  .video-gallery iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Estilo para los botones de navegación */
+  .navegacion {
+    margin-top: 10px;
+  }
+  
+  .anterior, .siguiente {
+    padding: 5px 10px;
+    background-color: #007bff; /* Cambia el color de fondo según tus preferencias */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .anterior:hover,.siguiente:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor por encima */
+  }
+  
+  /* Alineación de los botones de navegación */
+  .anterior {
+    margin-right: 10px;
+  }
+
+  /* Sección entrenamiento y preparación */
+  .consejos li,.preparacion li{
+    list-style-type: upper-roman;  /* Para aplicar números romanos a una lista */
+    font-size: 1.5rem;  
+  }
+
+  /* Sección footer */
+
+  footer{
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(24,124,201,1);
+    background: -moz-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24,124,201,1)), color-stop(100%, rgba(20,97,169,1)));
+    background: -webkit-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: -o-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: -ms-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+    background: linear-gradient(to right, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
+  }
+
+  .redes a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+  }
+
+  .redes img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .copyright{
+    margin-top: 20px;
+  }
+
+  .copyright img{
+    width: 100px;
+    /* height: 100px; */
+  } 
+
+
+  
+  /* SECCIÓN CARLO - FINAL */

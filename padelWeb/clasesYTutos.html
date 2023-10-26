@@ -12,16 +12,28 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img/PROPADEL.svg" alt="Logo de la Web">
+            <a href="index.html"><img src="img/PROPADEL.svg" alt="Logo de la Web"></a>
         </div>
         <div class="seccion-derecha">
             <div class="opciones">
-                <a href="definicionEHistoria.html">Historia</a>
-                <a href="reglas.html">Reglas</a>
-                <a href="noticias.html">Noticias</a>
-                <a href="clasesYTutos.html">Clases</a>
-                <a href="pistas.html">Directorio</a>
-                <!-- <a href="#">Calendario y Torneos</a> -->
+                <nav>
+                    <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="definicionEHistoria.html">Historia</a></li>
+                    <li><a href="reglas.html">Reglas</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="clasesYTutos.html">Consejos</a></li>
+                    <li class="dropdown">
+                        <a href="pistas.html">Directorio</a>
+                        <ul class="submenu">
+                            <li><a href="pistas.html#zona-centro">Centro</a></li>
+                            <li><a href="pistas.html#zona-norte">Norte</li></a>
+                            <li><a href="pistas.html#zona-sur">Sur</li></a>
+                        </ul>
+                    </li>
+                    <!-- <a href="#">Calendario y Torneos</a> -->
+                    </ul>
+                </nav>
             </div>
             <div class="barra">
                 <input type="text" placeholder="Buscar...">
@@ -35,7 +47,7 @@
             <h2>Consejos para entrenamientos de pádel</h2>
             <ol>
                 <li>
-                    <p>Aprende las reglas básicas: Famiularízate con las reglas básicas del pádel, como
+                    <p>Aprende las reglas básicas: Familarízate con las reglas básicas del pádel, como
                         las dimensiones de la pista, las reglas de saque y las faltas comunes.</p>
                 </li>
                 <li>

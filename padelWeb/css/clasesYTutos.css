@@ -23,11 +23,13 @@ p {
     margin-top: 20px;
     padding: 0;
     line-height:1.5;
+    text-align: center;
 }
 
 h1,h2 {
   font-size: 30px;
   font-weight: 800;
+  text-align: center;
 }
 
 body {
@@ -68,14 +70,19 @@ header {
 }
 
 /* Estilos para las opciones de idioma y usuario */
-.opciones a {
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.opciones li a {
   color: #C0C0C0; /* Color de texto */
   text-decoration: none; /* Sin subrayado en enlaces */
   padding: 10px;
   font-size: 20px;
 }
 
-.opciones a:hover{
+.opciones li a:hover{
   background-color: rgba(33, 93, 152, 1);
   color: white;
 }
@@ -94,6 +101,33 @@ header {
   padding: 5px 10px;
   margin-right: 20px; /* Espaciado interior del botón */
   cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(24, 124, 201, .9);
+  padding: 10px;
+}
+
+.dropdown .submenu li{
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.dropdown .submenu a{
+  display: inline;
+  margin-left: 10px;
+}
+
+.dropdown:hover .submenu {
+  display: block;
 }
 
 /* Estilo para el contenedor principal de la galería */

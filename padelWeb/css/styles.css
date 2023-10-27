@@ -4,6 +4,7 @@
   --colorSecundario: #AECBD2;
   --fuenteSecundaria: arial;
   --colorTerciario: orange;
+  --fuenteFondoMain: 'Kanit', sans-serif;
 }
 
 html {
@@ -26,7 +27,8 @@ p {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-size: 30px;
   font-weight: 800;
 }
@@ -111,18 +113,61 @@ header {
   /* Cambiar cursor al pasar por encima */
 }
 
-
-
-.main .fondoMain {
+.main {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 500px;
-  background-image: url(../img/wallpaper.webp);
+  background: url(../img/wallpaper.webp) center/cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
+/* Estilos para el slider */
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 80%; /* Ancho del slider, ajusta según tus necesidades */
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5); /* Fondo transparente */
+  transition: transform 0.5s; /* Duración de la transición */
+}
+
+/* Estilos para cada slide */
+.slide {
+  flex: 0 0 100%; /* Ancho de cada slide */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.5s; /* Duración de la transición */
+}
+
+/* Estilos para el contenido dentro de cada slide */
+.slide-content {
+  background: rgba(0, 0, 0, 0.6); /* Fondo del contenido, ajusta la opacidad según tus necesidades */
+  color: #fff; /* Color del texto */
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Flechas de navegación del slider (puedes personalizarlas) */
+.prev-slide, .next-slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-slide {
+  left: 10px;
+}
+
+.next-slide {
+  right: 10px;
+}
 
 section h2 {
   color: #333;
@@ -142,8 +187,10 @@ section h2 {
 
 /* imagen de fondo para enlace de definicion */
 
-.seccionDefinicion {
+.seccionDefinicion{
   margin-top:50px;
+  margin-right:auto;
+  margin-left:auto;
   display: flex;
   justify-content: center;
   max-width:1100px;
@@ -163,10 +210,30 @@ section h2 {
 
 .card:hover{
   box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-  transform: translateY(-3%)
+  transform: translateY(-1%)
 }
 
 /* tamaño de imagen de card */
+
+.fondoCardDefinicion{
+  width:100%;
+  height:300px;
+  background-image: url('../img/que-es-el-padel-fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -30px;
+
+}
+.fondoCardHistoria{
+  width:100%;
+  height:300px;
+  background-image: url('../img/Enrique-Corcuera.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -70px;
+
+}
+
 
 .card img {
     width: 100%; /* Ancho deseado */
@@ -185,6 +252,7 @@ section h2 {
 
 .card .contenido h3{
 
+  font-size: 30px;
   font-weight: 400px;
   margin-bottom: 15px;
 }
@@ -323,28 +391,71 @@ section h2 {
 /* Sección footer */
 
 footer {
+  opacity: 90%;
   color: #fff;
   text-align: center;
   padding: 20px 0;
   background: rgba(24, 124, 201, 1);
-  background: -moz-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  background: -moz-linear-gradient(left, rgb(235, 246, 254) 0%, rgb(168, 198, 226) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24, 124, 201, 1)), color-stop(100%, rgba(20, 97, 169, 1)));
   background: -webkit-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
-  background: -o-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
-  background: -ms-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
-  background: linear-gradient(to right, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  background: -o-linear-gradient(left, rgb(152, 157, 161) 0%, rgb(81, 111, 138) 100%);
+  background: -ms-linear-gradient(left, rgb(139, 149, 156) 0%, rgb(96, 119, 140) 100%);
+  background: linear-gradient(to right, rgb(118, 138, 154) 0%, rgb(78, 97, 114) 100%);
+}
+
+footer>img{
+  height:100px;
+}
+
+.logoFooter{
+  display: flex;
+  justify-content: center;
+}
+
+.logoFooter img{
+  height: 150px;
+}
+
+footer a{
+  text-decoration: none;
+  margin-bottom: 20px;
+  color:var(--colorSecundario);
+  font-weight: 500;
+}
+
+footer a:hover{
+  color:#1FD94A;
+}
+
+.redes{
+  display: flex;
+  justify-content: center;
 }
 
 .redes a {
-  text-decoration: none;
   margin: 0 10px;
-  color: #fff;
+  padding:20px;
 }
 
-.redes img {
+.redes a img {
   width: 30px;
   height: 30px;
+  stroke: #1FD94A;
 }
+
+.redes a img:hover{
+  fill: #FF0000;
+
+}
+
+svg{
+  fill:#1FD94A;
+  width: 30px;
+  height: 30px;
+
+}
+
 
 .copyright {
   margin-top: 20px;
@@ -353,6 +464,17 @@ footer {
 .copyright img {
   width: 100px;
   /* height: 100px; */
+}
+
+.enlacesFooter ul{
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+.enlacesFooter li{
+  padding:10px;
 }
 
 

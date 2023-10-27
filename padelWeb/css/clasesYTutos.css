@@ -132,52 +132,99 @@ nav ul {
 
 /* Estilo para el contenedor principal de la galería */
 .videos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
   
-  /* Estilo para el área de visualización de video */
-  .galeria-videos {
-    position: relative;
-    width: 1120px;
-    height: 630px;
-    overflow: hidden;
-  }
+/* Estilo para el área de visualización de video */
+.galeria-videos {
+  position: relative;
+  width: 1120px;
+  height: 630px;
+  overflow: hidden;
+}
   
-  /* Estilo para los iframes de video (ajusta el tamaño según tus necesidades) */
-  .video-gallery iframe {
+/* Estilo para los iframes de video (ajusta el tamaño según tus necesidades) */
+.video-gallery iframe {
     width: 100%;
     height: 100%;
     border: none;
   }
   
-  /* Estilo para los botones de navegación */
-  .navegacion {
-    margin-top: 10px;
-  }
-  
-  .anterior, .siguiente {
-    padding: 5px 10px;
-    background-color: #007bff; /* Cambia el color de fondo según tus preferencias */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .anterior:hover,.siguiente:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor por encima */
-  }
-  
-  /* Alineación de los botones de navegación */
-  .anterior {
-    margin-right: 10px;
+/* Estilo para los botones de navegación */
+.navegacion {
+  margin-top: 10px;
+}
+
+.anterior, .siguiente {
+  padding: 5px 10px;
+  background-color: #007bff; /* Cambia el color de fondo según tus preferencias */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.anterior:hover,.siguiente:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor por encima */
+}
+
+/* Alineación de los botones de navegación */
+.anterior {
+  margin-right: 10px;
+}
+
+/* Sección entrenamiento y preparación */
+.consejos li,.preparacion li{
+  list-style-type: upper-roman;  /* Para aplicar números romanos a una lista */
+  font-size: 1.5rem;  
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para dispositivos móviles */
+  body {
+      font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
   }
 
-  /* Sección entrenamiento y preparación */
-  .consejos li,.preparacion li{
-    list-style-type: upper-roman;  /* Para aplicar números romanos a una lista */
-    font-size: 1.5rem;  
+  .logo img {
+      max-width: 80px; /* Cambia el tamaño máximo del logotipo para dispositivos móviles */
   }
+
+  .seccion-derecha {
+      flex-direction: column; /* Cambia la dirección de flexbox para apilar elementos en dispositivos móviles */
+  }
+
+  .opciones li a {
+      font-size: 18px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+      padding: 8px; /* Ajusta el espaciado de los elementos de navegación en dispositivos móviles */
+  }
+
+  .barra input {
+      padding: 5px; /* Ajusta el espaciado interior del campo de búsqueda en dispositivos móviles */
+  }
+
+  .barra button {
+      margin-right: 0; /* Elimina el margen derecho del botón de búsqueda en dispositivos móviles */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Estilos para tabletas */
+  body {
+      font-size: 18px; /* Ajusta el tamaño de fuente para tabletas */
+  }
+
+  .logo img {
+      max-width: 100px; /* Ajusta el tamaño máximo del logotipo para tabletas */
+  }
+
+  .opciones li a {
+      font-size: 20px; /* Ajusta el tamaño de fuente para tabletas */
+  }
+
+  .barra input {
+      padding: 8px; /* Ajusta el espaciado interior del campo de búsqueda para tabletas */
+  }
+}

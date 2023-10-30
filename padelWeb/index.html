@@ -21,13 +21,37 @@
         </div>
         <div class="seccion-derecha">
             <div class="opciones">
-                <a href="index.html">Inicio</a>
-                <a href="definicionEHistoria.html">Historia</a>
-                <a href="reglas.html">Reglas</a>
-                <a href="noticias.html">Noticias</a>
-                <a href="clasesYTutos.html">Consejos</a>
-                <a href="pistas.html">Directorio</a>
-                <!-- <a href="#">Calendario y Torneos</a> -->
+                <nav>
+                    <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="definicionEHistoria.html">Historia</a>
+                        <ul class="submenu">
+                            <li><a href="definicionEHistoria.html#secciondefinicion">Definición</a></li>
+                            <li><a href="definicionEHistoria.html#seccionhistoria">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reglas.html">Reglas</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li class="dropdown">
+                        <a href="clasesYTutos.html">Consejos</a>
+                        <ul class="submenu">
+                            <li><a href="clasesYTutos.html#entrenamientos">Entrenamientos</a></li>
+                            <li><a href="clasesYTutos.html#preparacion">Preparación</a></li>
+                            <li><a href="clasesYTutos.html#videos">Vídeos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="pistas.html">Directorio</a>
+                        <ul class="submenu">
+                            <li><a href="pistas.html#zona-centro">Centro</a></li>
+                            <li><a href="pistas.html#zona-norte">Norte</li></a>
+                            <li><a href="pistas.html#zona-sur">Sur</li></a>
+                        </ul>
+                    </li>
+                    <!-- <a href="#">Calendario y Torneos</a> -->
+                    </ul>
+                </nav>
             </div>
             <div class="barra">
                 <input type="text" placeholder="Buscar...">
@@ -35,6 +59,7 @@
             </div>
         </div>
     </header>
+
     <section class="main">
         <div class="slider">
             <span class="prev-slide">&lt;</span>
@@ -83,7 +108,6 @@
                 <p>El pádel es un apasionante deporte de raqueta que ha ganado un lugar destacado en la escena
                     deportiva en los últimos años. A medio camino entre el tenis y el squash, el pádel se juega en una
                     pista más pequeña y cerrada, rodeada de paredes de cristal o...</p>
-
                 <a href="#">Leer mas</a>
             </div>
         </div>
@@ -98,18 +122,7 @@
                 <a href="#">Leer mas</a>
             </div>
         </div>
-        </div>
-
-
-
-
     </section>
-
-
-
-
-
-
 
     <!--  /* SECCION REGLAS DEL PADEL(LUIS) FINAL*/-->
     <!--  /* SECCION NOTICIAS(LUIS) INICIO*/-->
@@ -119,49 +132,57 @@
     <!--  /* SECCION NOTICIAS(LUIS) FINAL*/-->
 
     <!-- Directorio clubes y pistas (sección Dani) -->
-    <section class="Encuentra tu pista margenes">
-        <h2>Encuentra tu pista</h2>
-        <div class="localizaciones"></div>
-        <div class="Zona norte"></div>
-        <div class="Zona centro"></div>
-        <div class="Zona sur"></div>
+        <section class="seccionPistas">
+            <div class="card">
+                <div class="fondoCardPistas">
+                </div>
+                <div class="contenido">
+                    <h3>Encuentra tu pista</h3>
+                    <p>Dentro de la Comunidad de Madrid nos encontramos con una gran cantidad de pistas de pádel repartidas
+                        por todo el municipio. Nosostros las hemos dividido en tres zonas: norte,centro y sur.</p>
+                    <a href="pistas.html">Leer mas</a>
+                </div>
+            </div>
+        </section>
 
         <!-- CALENDARIO (SAMUU) -->
         <section class="calendario margenes">
             <h2>Calendario Premier Padel<h2>
-                    <p>2023</p>
-                    <p>2024</p>
-                    <section>
-
-                    </section>
-                    <section class="galeria margenes">
-                        <h2>Galería de Fotos</h2>
-                        <div class="imagen">
-                            <img src="imagen1.jpg" alt="Imagen de una pista de pádel">
-                        </div>
-                        <div class="imagen">
-                            <img src="imagen2.jpg" alt="Imagen de un partido de pádel">
-                        </div>
-                    </section>
+            <p>2023</p>
+            <p>2024</p>
+            <section>
+            </section>
+            <section class="galeria margenes">
+                <h2>Galería de Fotos</h2>
+                <div class="imagen">
+                    <img src="imagen1.jpg" alt="Imagen de una pista de pádel">
+                </div>
+                <div class="imagen">
+                    <img src="imagen2.jpg" alt="Imagen de un partido de pádel">
+                </div>
+            </section>
         </section>
 
         <!-- Sección Carlo - Resumen - Inicio -->
-        <section class="consejos">
-            <h1>Consejos de pádel</h1>
-            <p>Para mejorar en el pádel, es importante aprender las reglas básicas, elegir la pala adecuada, practicar
-                los golpes fundamentales, trabajar en equipo, mantener una buena condición física, conocer tu posición
-                en la pista, perfeccionar tu saque, jugar regularmente, observar a jugadores más experimentados y, sobre
-                todo, disfrutar del juego sin preocuparse demasiado por ganar o perder en las primeras partidas.</p>
-            <p>Antes de jugar al pádel, es esencial realizar un calentamiento adecuado para prevenir lesiones. Esto
-                implica un calentamiento cardiovascular, estiramientos dinámicos, fortalecimiento del core y trabajar en
-                la flexibilidad. Además, asegúrate de mantenerte hidratado, usar ropa deportiva apropiada y escuchar a
-                tu cuerpo durante el juego. Tomar clases para aprender las técnicas básicas también es recomendable. Lo
-                más importante es disfrutar del juego y divertirse.</p>
-            <a href="clasesYTutos.html">
-                <p>Para saber más haz clic en este enlace.</p>
-            </a>
+        <section class="seccionConsejos">
+            <div class="card">
+                <div class="fondoCardConsejos">
+                </div>
+                <div class="contenido">
+                    <h3>Consejos para jugar pádel</h3>
+                    <p>Para mejorar en el pádel, es importante aprender las reglas básicas, elegir la pala adecuada, practicar
+                        los golpes fundamentales, trabajar en equipo, mantener una buena condición física, conocer tu posición
+                        en la pista, perfeccionar tu saque, jugar regularmente, observar a jugadores más experimentados y, sobre
+                        todo, disfrutar del juego sin preocuparse demasiado por ganar o perder en las primeras partidas.</p>
+                    <p>Antes de jugar al pádel, es esencial realizar un calentamiento adecuado para prevenir lesiones. Esto
+                        implica un calentamiento cardiovascular, estiramientos dinámicos, fortalecimiento del core y trabajar en
+                        la flexibilidad. Además, asegúrate de mantenerte hidratado, usar ropa deportiva apropiada y escuchar a
+                        tu cuerpo durante el juego. Tomar clases para aprender las técnicas básicas también es recomendable. Lo
+                        más importante es disfrutar del juego y divertirse.</p>
+                    <a href="clasesYTutos.html">Leer más</a>
+                </div>
+            </div>
         </section>
-    </section>
     <!--Sección Carlo - Resumen - Final -->
     <footer>
 

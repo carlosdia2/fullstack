@@ -62,30 +62,30 @@ header {
 
 /* Estilos para el logotipo */
 .logo img {
-  max-width: 100px;
-  /* Tamaño máximo del logotipo */
+  max-width: 100px; /* Tamaño máximo del logotipo */
   padding-left: 20px;
 }
 
 /* Estilos para la sección de la derecha */
 .seccion-derecha {
-  display: flex;
-  /* Mostrar elementos en una fila */
-  gap: 20px;
-  /* Espaciado entre elementos */
+  display: flex; /* Mostrar elementos en una fila */
+  gap: 20px; /* Espaciado entre elementos */
 }
 
 /* Estilos para las opciones de idioma y usuario */
-.opciones a {
-  color: #C0C0C0;
-  /* Color de texto */
-  text-decoration: none;
-  /* Sin subrayado en enlaces */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.opciones li a {
+  color: #C0C0C0; /* Color de texto */
+  text-decoration: none; /* Sin subrayado en enlaces */
   padding: 10px;
   font-size: 20px;
 }
 
-.opciones a:hover {
+.opciones li a:hover{
   background-color: rgba(33, 93, 152, 1);
   color: white;
 }
@@ -93,24 +93,46 @@ header {
 /* Estilos para la barra de búsqueda */
 .barra input {
   padding: 5px;
-  margin-right: 20px;
-  /* Espaciado interior */
-  border: 1px solid #ccc;
-  /* Borde con color de fondo */
+  margin-top: 10px;
+  margin-right: 20px; /* Espaciado interior */
+  border: 1px solid #ccc; /* Borde con color de fondo */
 }
 
 .barra button {
-  background-color: #1FD94A;
-  /* Color de fondo del botón de búsqueda */
-  color: #fff;
-  /* Color de texto del botón */
-  border: none;
-  /* Sin borde en el botón */
+  background-color: #1FD94A; /* Color de fondo del botón de búsqueda */
+  color: #fff; /* Color de texto del botón */
+  border: none; /* Sin borde en el botón */
   padding: 5px 10px;
-  margin-right: 20px;
-  /* Espaciado interior del botón */
-  cursor: pointer;
-  /* Cambiar cursor al pasar por encima */
+  margin-top: 10px;
+  margin-right: 20px; /* Espaciado interior del botón */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(24, 124, 201, .9);
+  padding: 10px;
+}
+
+.dropdown .submenu li{
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.dropdown .submenu a{
+  display: inline;
+  margin-left: 10px;
+}
+
+.dropdown:hover .submenu {
+  display: block;
 }
 
 .main {
@@ -187,7 +209,7 @@ section h2 {
 
 /* imagen de fondo para enlace de definicion */
 
-.seccionDefinicion{
+.seccionDefinicion, .seccionConsejos, .seccionPistas{
   margin-top:50px;
   margin-right:auto;
   margin-left:auto;
@@ -234,6 +256,14 @@ section h2 {
 
 }
 
+.fondoCardConsejos{
+  width:100%;
+  height:300px;
+  background-image: url('../img/furbo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -30px;
+}
 
 .card img {
     width: 100%; /* Ancho deseado */
@@ -360,7 +390,73 @@ section h2 {
 
 /* estilos para seccion definicion */
 
+/*SECCIÓN DANI: DIRECTORIO
+*/
 
+.card{
+  width:100%;
+  margin:20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background:white;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  cursor:default;
+  /* transition: all 400ms ease; efecto suave 400 milisegundos */
+}
+
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  transform: translateY(-1%)
+}
+
+/* tamaño de imagen de card */
+
+.fondoCardPistas{
+  width:100%;
+  height:300px;
+  background-image: url(../img/pista-padel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -30px;
+
+}
+
+.card img {
+  width: 100%; /* Ancho deseado */
+  height: auto;
+}
+
+.card .contenido2{
+padding: 15px;
+text-align: center;
+}
+
+.card .contenido2 p {
+line-height: 1.5;
+color: #6a6a6a;
+}
+
+.card .contenido2 h3{
+
+font-size: 30px;
+font-weight: 400px;
+margin-bottom: 15px;
+}
+
+.card .contenido2 a{
+text-decoration: none;
+display: inline-block;
+margin-top:10px;
+padding:10px;
+color:#2fb4cc;
+border:4px;
+border: 1px solid #2fb4cc;
+}
+
+.cardPistas .contenido2 a:hover{
+background-color: #2fb4cc;
+color:white;
+}
 
 /* SECCION REGLAS DEL PADEL(LUIS) FINAL*/
 
@@ -374,19 +470,6 @@ section h2 {
 }
 
 /* SECCION SAMU FINAL */
-
-
-/* SECCIÓN CARLO RESUMEN - INICIO */
-.consejos a {
-  text-decoration: none;
-  color: #C0C0C0;
-}
-
-.consejos a:hover {
-  color: white;
-}
-
-/* SECCIÓN CARLO RESUMEN - FINAL */
 
 /* Sección footer */
 

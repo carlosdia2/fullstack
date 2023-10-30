@@ -90,6 +90,7 @@ nav ul {
 /* Estilos para la barra de búsqueda */
 .barra input {
   padding: 5px;
+  margin-top: 10px;
   margin-right: 20px; /* Espaciado interior */
   border: 1px solid #ccc; /* Borde con color de fondo */
 }
@@ -99,7 +100,8 @@ nav ul {
   color: #fff; /* Color de texto del botón */
   border: none; /* Sin borde en el botón */
   padding: 5px 10px;
-  margin-right: 20px; /* Espaciado interior del botón */
+  margin-right: 20px;
+  margin-top: 10px; /* Espaciado interior del botón */
   cursor: pointer; /* Cambiar cursor al pasar por encima */
 }
 

@@ -16,27 +16,36 @@ html {
 }
 
 .seccionHistoria{
-  margin:50px;
+display: flex;
+border:10px solid black;
 }
 
-.marco {
-  background-color: beige;
-max-width:100%;
-  padding: 100px;
-  background-image: url('../img/pista-carlos.png');
-  background-size: cover;
-}
-
-.textoMarco{
-  padding:50px;
+.fondoArticulo{
+  border-right: 4px solid black;
+  width:50%;
+  height:auto;
+  background-image: url('../img/Enrique-Corcuera.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 
-.seccionHistoria p {
+.textoArticulo{
+  border-left:10px solid black;
+  width:50%;
+background: #FFFFFF;
+background: linear-gradient(135deg, #FFFFFF, #E1FFFB);
+  opacity:70%;
+}
+
+
+.textoArticulo p {
   margin: 20px 40px;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-.seccionHistoria h2 {
+.textoArticulo h2 {
   padding: 20px;
   text-align: center;
 }

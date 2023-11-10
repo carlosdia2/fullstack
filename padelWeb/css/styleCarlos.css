@@ -19,22 +19,48 @@ html {
 display: flex;
 border:10px solid black;
 }
+.seccionDefinicion{
+  display: flex;
+  border:10px solid black;
+  }
 
 .fondoArticulo{
   border-right: 4px solid black;
-  width:50%;
+  width:40%;
   height:auto;
   background-image: url('../img/Enrique-Corcuera.jpg');
   background-size:cover;
   background-repeat: no-repeat;
+  background-position-x: -20px;
+}
+
+.fondoArticuloDefinicion{
+  border-right: 4px solid black;
+  height:100vh;
+  width:40%;
+  height:auto;
+  background-image: url('../img/padel_wallpaper.jpg');
+  background-size:cover;
+  background-position-x: -400px;
+  background-repeat: no-repeat;
+}
+
+.fondoArticuloReglas{
+  border-right: 4px solid black;
+  width:40%;
+  height:auto;
+  background-image: url('../img/reglas.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-x: -300PX;
 }
 
 
 .textoArticulo{
   border-left:10px solid black;
-  width:50%;
-background: #FFFFFF;
-background: linear-gradient(135deg, #FFFFFF, #E1FFFB);
+  width:60%;
+  background: #FFFFFF;
+  background: linear-gradient(135deg, #FFFFFF, #E1FFFB);
   opacity:70%;
 }
 
@@ -45,7 +71,7 @@ background: linear-gradient(135deg, #FFFFFF, #E1FFFB);
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.textoArticulo h2 {
+.textoArticulo h1, h2 {
   padding: 20px;
   text-align: center;
 }
@@ -59,6 +85,7 @@ p {
   padding: 0;
   line-height: 1.5;
 }
+
 
 h1,
 h2 {

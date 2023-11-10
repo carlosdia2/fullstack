@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Qué es el pádel?</title>
+    <title>Qué es el pádel</title>
     <link rel="preload" href="css/normalize.css" as="style">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="preload" href="./css/styleCarlos.css as=" style">
@@ -14,16 +14,41 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./img/PROPADEL.svg" alt="Logo de la Web">
+            <a href="index.html"><img src="img/PROPADEL.svg" alt="Logo de la Web"></a>
         </div>
         <div class="seccion-derecha">
             <div class="opciones">
-                <a href="seccionCarlos/definicionEHistoria.html">Historia</a>
-                <a href="#">Reglas</a>
-                <a href="#">Noticias</a>
-                <a href="#">Clases</a>
-                <a href="secciónDani/pistas.html">Directorio</a>
-                <a href="#">Calendario y Torneos</a>
+                <nav>
+                    <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="Historia.html">Historia</a>
+                        <ul class="submenu">
+                            <li><a href="definicion.html">Definición</a></li>
+                            <li><a href="Historia.html">Pasado</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reglas.html">Reglas</a></li>
+                    <!-- <li><a href="noticias.html">Noticias</a></li> -->
+                    <li class="dropdown">
+                        <a href="clasesYTutos.html">Consejos</a>
+                        <ul class="submenu">
+                            <li><a href="clasesYTutos.html#entrenamientos">Entrenamientos</a></li>
+                            <li><a href="clasesYTutos.html#preparacion">Preparación</a></li>
+                            <li><a href="clasesYTutos.html#videos">Vídeos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="pistas.html">Directorio</a>
+                        <ul class="submenu">
+                            <li><a href="pistas.html#zona-centro">Centro</a></li>
+                            <li><a href="pistas.html#zona-norte">Norte</li></a>
+                            <li><a href="pistas.html#zona-sur">Sur</li></a>
+                        </ul>
+                    </li>
+                    <!-- <a href="#">Calendario y Torneos</a> -->
+                    </ul>
+                </nav>
             </div>
             <div class="barra">
                 <input type="text" placeholder="Buscar...">
@@ -33,24 +58,98 @@
     </header>
 
     <!-- SECCION: QUE ES EL PADEL (de Carlos) -->
-    <section class="seccionDefinicion margenes">
-        <h2>¿Qué es el pádel?</h2>
-        <p>
-            El pádel es un apasionante deporte de raqueta que ha ganado un lugar destacado en la escena deportiva en los
-            últimos años. A medio camino entre el tenis y el squash, el pádel se juega en una pista más pequeña y
-            cerrada, rodeada de paredes de cristal o malla metálica. Dos parejas compiten en un espacio reducido,
-            utilizando raquetas específicas y una pelota con perforaciones. La dinámica del juego combina la estrategia,
-            la potencia y la agilidad, lo que lo convierte en una actividad apasionante tanto para principiantes como
-            para jugadores experimentados. </p>
+    <section class="seccionDefinicion">
 
-        <p>Lo que hace que el pádel sea aún más atractivo es su creciente popularidad en todo el mundo. En los últimos
-            años, este deporte ha experimentado un auge impresionante, atrayendo a jugadores de todas las edades y
-            niveles de habilidad. Su facilidad de aprendizaje y la emoción que ofrece han convertido al pádel en una
-            opción de entretenimiento deportivo ideal. Además, la posibilidad de jugar en parejas fomenta la
-            socialización y la diversión en cada partido. El pádel no solo es un deporte, sino una experiencia que ha
-            conquistado a numerosos entusiastas, convirtiéndose en una tendencia en constante crecimiento.
-        </p>
+       <div class="fondoArticuloDefinicion">
+    
+        </div>
+
+
+     
+
+            <div class="textoArticulo">
+            
+            <h2>¿Qué es el pádel?</h2>
+
+<p>El pádel es un deporte de raqueta o pala que se juega en parejas, en una pista rectangular cerrada por paredes. El objetivo del juego es pasar la pelota al campo contrario, haciendo que esta rebote primero en el suelo. La pelota puede rebotar en las paredes, pero no en el techo.</p>
+
+<p>El pádel es un deporte relativamente joven, que se originó en México en 1969. En España, se empezó a jugar en la década de 1970, y desde entonces se ha convertido en uno de los deportes más populares del país.</p>
+
+<h2>Reglas básicas</h2>
+
+<p>El pádel se juega al mejor de tres sets, con un tie-break en caso de empate a 6-6. Cada set se gana por una diferencia de dos puntos, a partir de los 6 puntos.</p>
+
+<p>El punto se termina cuando uno de los jugadores no devuelve la pelota de manera apropiada. Las faltas más comunes son:</p>
+
+<ul>
+  <li>Devolver la pelota fuera de los límites de la pista.</li>
+  <li>Devolver la pelota antes de que rebote en el suelo.</li>
+  <li>Devolver la pelota dos veces.</li>
+</ul>
+
+<p>Si quieres saber más sobre las reglas, echa un vistazo a nuestro <a href="reglas.html">articulo</a> sobre el tema</p>
+
+<h2>Equipamiento</h2>
+
+<p>El único equipamiento necesario para jugar al pádel es una pala y una pelota.</p>
+
+<p>La pala es una raqueta de forma rectangular, con una superficie lisa o rugosa. Las palas se pueden encontrar en diferentes materiales y pesos, por lo que es importante elegir una pala adecuada a tu nivel de juego.</p>
+
+<p>La pelota es de color amarillo o naranja, y tiene un diámetro de entre 6,32 y 6,77 cm.</p>
+
+<p>Posiciones en la pista</p>
+
+<p>En el pádel, cada jugador ocupa una posición fija en la pista. El jugador que juega en la izquierda se llama "revés", y el jugador que juega en la derecha se llama "drive".</p>
+
+<p>El revés es la posición más difícil, ya que es la que tiene más responsabilidad en la defensa. El drive es la posición más fácil, ya que es la que tiene más responsabilidad en el ataque.</p>
+
+<h2>Beneficios del pádel</h2>
+
+<p>El pádel es un deporte muy completo, que ofrece una serie de beneficios para la salud, como:</p>
+
+<ul>
+  <li>Mejora la condición física.</li>
+  <li>Reduce el estrés.</li>
+  <li>Mejora el equilibrio y la coordinación.</li>
+  <li>Favorece el trabajo en equipo.</li>
+</ul>
+
+<p>El pádel es un deporte divertido y accesible para todas las edades y niveles de condición física. Si estás buscando un deporte nuevo para practicar, el pádel es una excelente opción.</p>
+
+
+    
+
     </section>
+
+    <footer>
+
+        <div class="logoFooter">
+            <img src="img/PROPADEL.svg">
+        </div>
+
+        <div class="infoFooter">
+            <p>Madrid, España</p>
+            <a href="mailto:info@propadel.com">info@propadel.com</a>
+        </div>
+
+        <div class="redes">
+            <a href="https://www.facebook.com" target="_blank"><img src="img/facebook (1).svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="img/icon_insta.svg" alt="Instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="img/icon_twitter.svg" alt="Twitter"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="img/icon_youtube.svg" alt="YouTube"></a>
+        </div>
+        
+
+        <div class="enlacesFooter">
+            <ul>
+                <li><a href="#">Información legal</a></li>
+                <li>|</li>
+                <li><a href="#">Politicas de privacidad</a></li>
+            </ul>
+        </div>
+    
+
+    </footer>
 
 </body>
 

@@ -525,3 +525,66 @@ svg{
 
 
 /* SECCIÓN CARLO - FINAL */
+
+/* Estilos generales para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  /* Añade aquí los estilos específicos para móviles */
+  /* Por ejemplo: */
+
+  /* Redefinición del tamaño del cuerpo de texto */
+  body {
+    font-size: 14px; /* Reducir el tamaño de fuente para mejorar la legibilidad en pantallas pequeñas */
+  }
+
+  /* Ajustes para el header */
+  header {
+    padding: 5px 0; /* Reducir el espacio alrededor del encabezado */
+  }
+
+  .logo img {
+    max-width: 80px; /* Reducir el tamaño del logo para dispositivos móviles */
+  }
+
+  .seccion-derecha {
+    flex-direction: column; /* Cambiar el diseño de los elementos a una columna para dispositivos móviles */
+    gap: 10px; /* Espaciado entre elementos */
+  }
+
+  nav ul {
+    flex-direction: column; /* Mostrar los elementos de navegación en una columna */
+    text-align: center; /* Centrar el texto */
+  }
+
+  .opciones li a {
+    font-size: 18px; /* Reducir el tamaño del texto del menú */
+    padding: 8px; /* Ajustar el espacio alrededor de los enlaces */
+  }
+
+  .barra input,
+  .barra button {
+    margin: 5px 0; /* Ajustar el espaciado de la barra de búsqueda y el botón */
+    width: 100%; /* Ocupar todo el ancho disponible */
+  }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Agrega aquí los estilos específicos para tablets */
+  /* Por ejemplo: */
+
+  body {
+    font-size: 16px; /* Puedes ajustar el tamaño de la fuente para una mejor legibilidad */
+  }
+
+  /* Ajustes para el header */
+  .logo img {
+    max-width: 100px; /* Puedes aumentar el tamaño del logo para tablets */
+  }
+
+  .opciones li a {
+    font-size: 20px; /* Ajusta el tamaño del texto del menú */
+    padding: 10px; /* Ajusta el espaciado alrededor de los enlaces */
+  }
+
+  /* Puedes realizar cambios en la disposición o tamaños de elementos para tabletas */
+}

@@ -1,0 +1,31 @@
+.seccionPrincipal{
+    height:200px;
+    width: 100%;
+    background-image: url("https://t3.ftcdn.net/jpg/05/64/82/08/360_F_564820811_n9WP1mM43pLiQwLkIA07KF9Hat5vkX2v.jpg");
+    background-repeat: no-repeat;
+    padding:20px;
+    border-radius: 4px;
+
+}
+
+body{
+    height:10000px;
+}
+
+
+.navPrincipal{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: yellow;
+    opacity: 80%;
+    width:50%;
+    height:50px;
+    padding:20px;
+    border-radius: 4px;
+}
+
+.botonPrincipal{
+    margin-bottom:40px;
+
+}

@@ -26,13 +26,15 @@ border:10px solid black;
 
 .fondoArticulo{
   border-right: 4px solid black;
-  width:40%;
+  min-width: 0%;
+  width:auto;
   height:auto;
   background-image: url('../img/Enrique-Corcuera.jpg');
-  background-size:cover;
+  background-size:contain;
   background-repeat: no-repeat;
-  background-position-x: -20px;
 }
+
+
 
 .fondoArticuloDefinicion{
   border-right: 4px solid black;
@@ -105,6 +107,7 @@ body {
 }
 
 /* INICIO DEL HEADER */
+/* INICIO DEL HEADER */
 header {
   color: #fff;
   display: flex;
@@ -118,6 +121,81 @@ header {
   background: -o-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
   background: -ms-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
   background: linear-gradient(to right, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+}
+
+/* Estilos para el logotipo */
+.logo img {
+  max-width: 100px; /* Tamaño máximo del logotipo */
+  padding-left: 20px;
+}
+
+/* Estilos para la sección de la derecha */
+.seccion-derecha {
+  display: flex; /* Mostrar elementos en una fila */
+  gap: 20px; /* Espaciado entre elementos */
+}
+
+/* Estilos para las opciones de idioma y usuario */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.opciones li a {
+  color: #C0C0C0; /* Color de texto */
+  text-decoration: none; /* Sin subrayado en enlaces */
+  padding: 10px;
+  font-size: 20px;
+}
+
+.opciones li a:hover{
+  background-color: rgba(33, 93, 152, 1);
+  color: white;
+}
+
+/* Estilos para la barra de búsqueda */
+.barra input {
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 20px; /* Espaciado interior */
+  border: 1px solid #ccc; /* Borde con color de fondo */
+}
+
+.barra button {
+  background-color: #1FD94A; /* Color de fondo del botón de búsqueda */
+  color: #fff; /* Color de texto del botón */
+  border: none; /* Sin borde en el botón */
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-right: 20px; /* Espaciado interior del botón */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(24, 124, 201, .9);
+  padding: 10px;
+}
+
+.dropdown .submenu li{
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.dropdown .submenu a{
+  display: inline;
+  margin-left: 10px;
+}
+
+.dropdown:hover .submenu {
+  display: block;
 }
 
 /* Estilos para el logotipo */

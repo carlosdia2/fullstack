@@ -12,16 +12,41 @@
 </head>
 <header>
     <div class="logo">
-        <img src="img/PROPADEL.svg" alt="Logo de la Web">
+        <a href="index.html"><img src="img/PROPADEL.svg" alt="Logo de la Web"></a>
     </div>
     <div class="seccion-derecha">
         <div class="opciones">
-            <a href="definicionEHistoria.html">Historia</a>
-            <a href="reglas.html">Reglas</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="clasesYTutos.html">Clases</a>
-            <a href="pistas.html">Directorio</a>
-            <!-- <a href="#">Calendario y Torneos</a> -->
+            <nav>
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="historia.html">Historia</a>
+                    <ul class="submenu">
+                        <li><a href="definicion.html">Definición</a></li>
+                        <li><a href="Historia.html">Pasado</a></li>
+                    </ul>
+                </li>
+                <li><a href="reglas.html">Reglas</a></li>
+                <!-- <li><a href="noticias.html">Noticias</a></li> -->
+                <li class="dropdown">
+                    <a href="clasesYTutos.html">Consejos</a>
+                    <ul class="submenu">
+                        <li><a href="clasesYTutos.html#entrenamientos">Entrenamientos</a></li>
+                        <li><a href="clasesYTutos.html#preparacion">Preparación</a></li>
+                        <li><a href="clasesYTutos.html#videos">Vídeos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="pistas.html">Directorio</a>
+                    <ul class="submenu">
+                        <li><a href="pistas.html#zona-centro">Centro</a></li>
+                        <li><a href="pistas.html#zona-norte">Norte</li></a>
+                        <li><a href="pistas.html#zona-sur">Sur</li></a>
+                    </ul>
+                </li>
+                <!-- <a href="#">Calendario y Torneos</a> -->
+                </ul>
+            </nav>
         </div>
         <div class="barra">
             <input type="text" placeholder="Buscar...">
@@ -32,131 +57,94 @@
 
 <body>
 
-    <section class="Encuentra tu pista margenes">
-        <h2>Encuentra tu pista</h2>
-        <div class="localizaciones"></div>
-        <div class="Zona norte"></div>
-        <div class="Zona centro"></div>
-        <div class="Zona sur"></div>
+
         <section class="Encuentra tu pista margenes">
             <h2>Encuentra tu pista</h2>
-            <div class="localizaciones">
-                <div class="zona norte">
-                    <h3>Zona norte</h3>
-                    <div>
-                        <div>
-                            <h4>Alcobendas</h4>
-                            <div class="pistasAlcobendas">
-                                <h5>Urban Padel</h5>
-                                <h5>Club El Estudiante</h5>
-                                <h5>Club de pádel la Moraleja</h5>
-                                <h5>Golf Park Madrid</h5>
-                            </div>
+                <section class="seccionPistas">
+                    <div class="card">
+                        <div class="fondoCardZonaNorte">
                         </div>
-                        <div>
-                            <h4>Boadilla del Monte</h4>
-                            <div class="pistaBoadilla">
-                                <h5>Club Republic Space</h5>
-                            </div>
+                        <div class="contenido">
+                            <h3>Zona norte</h3>
+                            <p>En esta zona de la Comunidad de Madrid encontramos pistas de pádel en las localidades de:</p>
+                                <p><li>Alcobendas: Urban Padel, Club El Estudiante, Club pádel la Moraleja y Golf Park Madrid.</li></p>
+                                <p><li>Boadilla del Monte: Club Republic Space.</li></p>
+                                <p><li> Las Rozas: Centro de Pádel Las Rozas y Polideportivo Municipal Alfredo Espiniella.</li></p>
+                                <p><li>Las Tablas: Pádel Madrid Las Tablas.</li></p>
+                                <p><li>Majadahonda: Las Rejas Open Club.</li></p>
+                                <p><li>Pozuelo de Alarcón: Pozuelo Pádel Club y Reebok Sport Club La Finca.</li></p>
+                                <p><li>San Sebastián de los Reyes: Ciudad Deportiva Jarama.</li></p>
+                            </p>
                         </div>
-                        <div>
-                            <h4>Las Rozas</h4>
-                            <div class="pistasLasRozas">
-                                <h5>Centro de Pádel Las Rozas</h5>
-                                <h5>Polideportivo Municipal Alfredo Espiniella</h5>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>Las Tablas</h4>
-                            <div class="pistaLasTablas">
-                                <h5>Pádel Madrid Las Tablas</h5>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>Majadahonda</h4>
-                            <div class="pistaMajadahonda">
-                                <h5>Las Rejas Open Club</h5>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>Pozuelo de Alarcón</h4>
-                            <div class="pistasPozuelo">
-                                <h5>Pozuelo Pádel Club</h5>
-                                <h5>Reebok Sport Club La Finca</h5>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>San Sebastián de los Reyes</h4>
-                            <div class="pistaSanSebastian">
-                                <h5>Ciudad Deportiva Jarama</h5>
-                            </div>
-                        </div>
-
                     </div>
+                </section>
+                        
+                <section class="seccionPistas">
+                    <div class="card">
+                        <div class="fondoCardZonaCentro">
+                        </div>
+                        <div class="contenido">
+                            <h3>Zona centro</h3>
+                            <p>En el centro de la Comunidad de Madrid las pistas de pádel están localizadas en las siguientes zonas:</p>
+                            <p><li> Alcalá de Henares: Pádel Indoor Alcalá, MOMO Sports Club La Dehesa, Ballpadel Indoor & Fitness Center, Polideportivo Munciipal espartales y Universidad de Alcalá de Henares Deportes.</li></p>
+                            <p><li>El Pardo: Club Deportivo Somontes, Club de Campo de Villa de Madrid y Parque Deportivo Puerta de Hierro.</li></p>
+                            <p><li> Loeches: Complejo Deportivo Cruz de Piedra.</li></p>
+                            <p><li>Madrid Central: Club Madrid Central Pádel, Pádel Cristalia, Ciudad de la Raqueta, Centro Deportivo Municipal Gallur, Club Deportivo Los Prunos, Club de Pádel y Tenis Fuencarral.</li></p>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccionPistas">
+                    <div class="card">
+                        <div class="fondoCardZonaSur">
+                        </div>
+                        <div class="contenido">
+                            <h3>Zona sur</h3>
+                            <p>En esta zona de la Comunidad de Madrid encontramos pistas de pádel en las localidades de:</p>
+                            <p><li>Alcorcón: Padel Indoor Alcorcón y Euroindoor Alcorcón.</li></p>
+                            <p><li>Arganda del Rey: Mega Pádel Indoor.</li></p>
+                            <p><li>Arroyomolinos: Pádel Las Mastillas.</li></p>
+                            <p><li>Getafe: Pádel Velo y GET Indoor Padel.</li></p>
+                            <p><li>Leganés: Club Leganés Indoor Pádel y Club de Tenis y Padel Villa de Leganés.</li></p>
+                            <p><li>Móstoles: Pádel Body F.</li></p>
+                            <p><li>Rivas: Blue Pádel Rivas.</li></p>
+                            <p><li>Vallecas: Pádel Kas e Indie Padel Club.</li></p>
+                            </p> 
+                        </div>
+                    </div>
+                </section>
+                
+    </section>
+            <footer>
+
+                <div class="logoFooter">
+                    <img src="img/PROPADEL.svg">
                 </div>
-                <div class="zona centro">
-                    <h3>Zona centro</h3>
-                    <div>
-                        <div>
-                            <h4>Alcalá de Henares</h4>
-                            <div class="pistasAlcala">
-                                <h5>Padel Indoor Alcalá</h5>
-                                <h5>MOMO Sports Club La Dehesa</h5>
-                                <h5>Ballpadel Indoor & Fitness Center</h5>
-                                <h5>Polideportivo Municipal espartales</h5>
-                                <h5>Universidad de Alcalá de Henares Deportes</h5>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>El Pardo</h4>
-                            <div class="pistasElPardo">
-                                <h5>Club Deportivo Somontes</h5>
-                                <h5>Club de Campo de Villa de Madrid</h5>
-                                <h5>Parque Deportivo Puerta de Hierro</h5>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>Loeches</h4>
-                            <div class="pistasLoeches">
-                                <h5>Complejo Deportivo Cruz de Piedra</h5>
-                            </div>
-                            <h4>Madrid Central</h4>
-                            <div class="pistasMadridCentral">
-                                <h5>Club Madrid Central Pádel</h5>
-                                <h5>Pádel Cristalia</h5>
-                                <h5>Ciudad de la Raqueta</h5>
-                                <h5>Centro Deportivo Municipal Gallur</h5>
-                                <h5>Club Deportivo Los Prunos</h5>
-                                <h5>Club de Pádel y Tenis Fuencarral</h5>
-                            </div>
-                        </div>
-
-
-                    </div>
-
+        
+                <div class="infoFooter">
+                    <p>Madrid, España</p>
+                    <a href="mailto:info@propadel.com">info@propadel.com</a>
                 </div>
-                <div class="zona sur">
-                    <h3>Zona sur</h3>
-                    <div>
-                        <h4>Arganda del Rey</h4>
-                        <div class="pistaArganda">
-                            <h5>Mega Pádel Indoor</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Arroyomolinos</h4>
-                        <div class="pistaArroyomolinos">
-                            <h5>Pádel Las Mastillas</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Rivas</h4>
-                        <div class="pistaRivas">
-                            <h5>Blue Pádel Rivas</h5>
-                        </div>
-                    </div>
+        
+                <div class="redes">
+                    <a href="https://www.facebook.com" target="_blank"><img src="img/facebook (1).svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="img/icon_insta.svg" alt="Instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="img/icon_twitter.svg" alt="Twitter"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="img/icon_youtube.svg" alt="YouTube"></a>
                 </div>
-            </div>
+                
+        
+                <div class="enlacesFooter">
+                    <ul>
+                        <li><a href="#">Información legal</a></li>
+                        <li>|</li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                    </ul>
+                </div>
+            
+        
+            </footer>
 </body>
 
 </html>

@@ -69,16 +69,27 @@ html {
   }
   
   /* Estilos para las opciones de idioma y usuario */
-  .opciones a {
-    color: #fff; /* Color de texto */
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .opciones li a {
+    color: #C0C0C0; /* Color de texto */
     text-decoration: none; /* Sin subrayado en enlaces */
     padding: 10px;
     font-size: 20px;
   }
   
+  .opciones li a:hover{
+    background-color: rgba(33, 93, 152, 1);
+    color: white;
+  }
+  
   /* Estilos para la barra de búsqueda */
   .barra input {
     padding: 5px;
+    margin-top: 10px;
     margin-right: 20px; /* Espaciado interior */
     border: 1px solid #ccc; /* Borde con color de fondo */
   }
@@ -88,9 +99,38 @@ html {
     color: #fff; /* Color de texto del botón */
     border: none; /* Sin borde en el botón */
     padding: 5px 10px;
+    margin-top: 10px;
     margin-right: 20px; /* Espaciado interior del botón */
     cursor: pointer; /* Cambiar cursor al pasar por encima */
   }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(24, 124, 201, .9);
+    padding: 10px;
+  }
+  
+  .dropdown .submenu li{
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+  
+  .dropdown .submenu a{
+    display: inline;
+    margin-left: 10px;
+  }
+  
+  .dropdown:hover .submenu {
+    display: block;
+  }
+  
   
  
   
@@ -107,44 +147,259 @@ html {
   
   section h2 {
       color: #333;
+      text-align: center;
+      font-size: 50px;
+  }
+  
+  .card{
+    width:100%;
+    margin:20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor:default;
+    /* transition: all 400ms ease; efecto suave 400 milisegundos */
+  }
+  
+  .card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    transform: translateY(-1%)
+  }
+  
+  /* tamaño de imagen de card */
+  
+  .fondoCardZonaNorte{
+    width:100%;
+    height:300px;
+    background-image: url(../img/imagenpistapadel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+  .fondoCardZonaCentro{
+    width:100%;
+    height:300px;
+    background-image: url(../img/imagenpistapadel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+  }
+
+  .fondoCardZonaSur{
+    width:100%;
+    height:300px;
+    background-image: url(../img/imagenpistapadel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+  .card  {
+    width: 100%; /* Ancho deseado */
+    height: auto;
+  }
+  
+  .card .contenido{
+  padding: 15px;
+  text-align: center;
+  }
+  
+  .card .contenido p {
+  line-height: 1.5;
+  color: #6a6a6a;
+  }
+  
+  .card .contenido h3{
+  
+  font-size: 30px;
+  font-weight: 400px;
+  margin-bottom: 15px;
   }
   
 
   
-    /* Sección footer */
   
-    footer{
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      background: rgba(24,124,201,1);
-      background: -moz-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24,124,201,1)), color-stop(100%, rgba(20,97,169,1)));
-      background: -webkit-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-      background: -o-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-      background: -ms-linear-gradient(left, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-      background: linear-gradient(to right, rgba(24,124,201,1) 0%, rgba(20,97,169,1) 100%);
-    }
-  
-    .redes a{
-      text-decoration: none;
-      margin: 0 10px;
-      color: #fff;
-    }
-  
-    .redes img{
-      width: 30px;
-      height: 30px;
-    }
-  
-    .copyright{
-      margin-top: 20px;
-    }
-  
-    .copyright img{
-      width: 100px;
-      /* height: 100px; */
-    } 
-  
-  
+/* Sección footer */
+
+footer {
+  opacity: 90%;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  background: rgba(24, 124, 201, 1);
+  background: -moz-linear-gradient(left, rgb(235, 246, 254) 0%, rgb(168, 198, 226) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(24, 124, 201, 1)), color-stop(100%, rgba(20, 97, 169, 1)));
+  background: -webkit-linear-gradient(left, rgba(24, 124, 201, 1) 0%, rgba(20, 97, 169, 1) 100%);
+  background: -o-linear-gradient(left, rgb(152, 157, 161) 0%, rgb(81, 111, 138) 100%);
+  background: -ms-linear-gradient(left, rgb(139, 149, 156) 0%, rgb(96, 119, 140) 100%);
+  background: linear-gradient(to right, rgb(118, 138, 154) 0%, rgb(78, 97, 114) 100%);
+}
+
+footer>img{
+  height:100px;
+}
+
+.logoFooter{
+  display: flex;
+  justify-content: center;
+}
+
+.logoFooter img{
+  height: 150px;
+}
+
+footer a{
+  text-decoration: none;
+  margin-bottom: 20px;
+  color:var(--colorSecundario);
+  font-weight: 500;
+}
+
+footer a:hover{
+  color:#1FD94A;
+}
+
+.redes{
+  display: flex;
+  justify-content: center;
+}
+
+.redes a {
+  margin: 0 10px;
+  padding:20px;
+}
+
+.redes a img {
+  width: 30px;
+  height: 30px;
+  stroke: #1FD94A;
+}
+
+.redes a img:hover{
+  fill: #FF0000;
+
+}
+
+svg{
+  fill:#1FD94A;
+  width: 30px;
+  height: 30px;
+
+}
+
+
+.copyright {
+  margin-top: 20px;
+}
+
+.copyright img {
+  width: 100px;
+  /* height: 100px; */
+}
+
+.enlacesFooter ul{
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+.enlacesFooter li{
+  padding:10px;
+}
     
+/* Estilos generales para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%; /* Ajusta el tamaño de fuente para dispositivos móviles según tus preferencias */
+  }
+
+  .margenes {
+    width: 90%; /* Modifica el ancho de los márgenes para dispositivos móviles */
+  }
+
+  /* Otros estilos específicos para dispositivos móviles */
+  body {
+    font-size: 14px; /* Ajusta el tamaño de fuente principal para dispositivos móviles */
+  }
+
+  header {
+    padding: 5px 0; /* Ajusta el espaciado en el encabezado para dispositivos móviles */
+  }
+
+  .logo img {
+    max-width: 80px; /* Ajusta el tamaño del logotipo para dispositivos móviles */
+  }
+
+  .seccion-derecha {
+    flex-direction: column; /* Cambia la dirección de flex a columna para dispositivos móviles */
+    align-items: flex-start; /* Ajusta la alineación de los elementos de la sección derecha */
+  }
+
+  .barra input,
+  .barra button {
+    margin: 10px 0; /* Ajusta el espaciado en la barra de búsqueda para dispositivos móviles */
+  }
+
+  .dropdown .submenu {
+    background-color: rgba(24, 124, 201, .9);
+    padding: 10px;
+    position: static; /* Ajusta la posición del menú desplegable para dispositivos móviles */
+  }
+
+  .card {
+    width: 100%; /* Ajusta el ancho de las tarjetas para dispositivos móviles */
+  }
+
+  .card .contenido h3 {
+    font-size: 24px; /* Ajusta el tamaño de fuente de los títulos de las tarjetas para dispositivos móviles */
+  }
+}
+
+/* Estilos generales para tabletas */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 55%; /* Ajusta el tamaño de fuente para tabletas según tus preferencias */
+  }
+
+  .margenes {
+    width: 70%; /* Modifica el ancho de los márgenes para tabletas */
+  }
+
+  /* Otros estilos específicos para tabletas */
+  body {
+    font-size: 16px; /* Ajusta el tamaño de fuente principal para tabletas */
+  }
+
+  header {
+    padding: 10px 0; /* Ajusta el espaciado en el encabezado para tabletas */
+  }
+
+  .logo img {
+    max-width: 100px; /* Ajusta el tamaño del logotipo para tabletas */
+  }
+
+  .seccion-derecha {
+    flex-direction: row; /* Restaura la dirección de flex a fila para tabletas */
+    align-items: center; /* Ajusta la alineación de los elementos de la sección derecha */
+  }
+
+  .barra input,
+  .barra button {
+    margin: 0 10px; /* Ajusta el espaciado en la barra de búsqueda para tabletas */
+  }
+
+  .dropdown .submenu {
+    background-color: rgba(24, 124, 201, .9);
+    padding: 10px;
+    position: static; /* Ajusta la posición del menú desplegable para tabletas */
+  }
+
+  .card {
+    width: 48%; /* Ajusta el ancho de las tarjetas para tabletas */
+  }
+
+  .card .contenido h3 {
+    font-size: 28px; /* Ajusta el tamaño de fuente de los títulos de las tarjetas para tabletas */
+  }
+}

@@ -26,9 +26,7 @@ border:10px solid black;
 
 .fondoArticulo{
   border-right: 4px solid black;
-  min-width: 0%;
-  width:auto;
-  height:auto;
+  width: 50%;
   background-image: url('../img/Enrique-Corcuera.jpg');
   background-size:contain;
   background-repeat: no-repeat;

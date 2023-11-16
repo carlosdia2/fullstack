@@ -18,13 +18,37 @@
         </div>
         <div class="seccion-derecha">
             <div class="opciones">
-                <a href="index.html">Inicio</a>
-                <a href="seccionCarlos/definicionEHistoria.html">Historia</a>
-                <a href="#">Reglas</a>
-                <!-- <a href="#">Noticias</a> -->
-                <a href="#">Clases</a>
-                <a href="secciónDani/pistas.html">Directorio</a>
-                <a href="#">Calendario y Torneos</a>
+                <nav>
+                    <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="historia.html">Historia</a>
+                        <ul class="submenu">
+                            <li><a href="definicion.html">Definición</a></li>
+                            <li><a href="Historia.html">Pasado</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reglas.html">Reglas</a></li>
+                    <!-- <li><a href="noticias.html">Noticias</a></li> -->
+                    <li class="dropdown">
+                        <a href="clasesYTutos.html">Consejos</a>
+                        <ul class="submenu">
+                            <li><a href="clasesYTutos.html#entrenamientos">Entrenamientos</a></li>
+                            <li><a href="clasesYTutos.html#preparacion">Preparación</a></li>
+                            <li><a href="clasesYTutos.html#videos">Vídeos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="pistas.html">Directorio</a>
+                        <ul class="submenu">
+                            <li><a href="pistas.html#zona-centro">Centro</a></li>
+                            <li><a href="pistas.html#zona-norte">Norte</li></a>
+                            <li><a href="pistas.html#zona-sur">Sur</li></a>
+                        </ul>
+                    </li>
+                    <!-- <a href="#">Calendario y Torneos</a> -->
+                    </ul>
+                </nav>
             </div>
             <div class="barra">
                 <input type="text" placeholder="Buscar...">
